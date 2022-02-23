@@ -15,6 +15,7 @@ const $loader = document.getElementById('loader');
 const $main = document.getElementById('main');
 const $header = document.getElementsByTagName('header')[0];
 const $footer = document.getElementById('contacto');
+let swRegistration = null;
 
 $main.style.display = 'none';
 $header.style.display = 'none';
@@ -48,30 +49,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
             console.log('Error al compartir');
         }                
     }
-
     if('serviceWorker' in navigator){
-        return navigator.serviceWorker.register('../../sw.js')
+        navigator.serviceWorker.register('../../sw.js')
         .then((swReg)=>{
+            swRegistration = swReg;
             console.log('¡Service worker registrado!')
-            modifySwRegistration(swReg)
-
             swRegistration.pushManager.getSubscription()
             .then((subscription)=> {
-                modifySuscriptionBool(!(subscription === null));
-                //updateSubscriptionOnServer(subscription);
-
-                if (isSubscribed) {
-                    console.log('User IS subscribed.');
-                } else {
-                    console.log('User is NOT subscribed.');
-                }
-              //updateBtn();
+                console.log('User IS subscribed.');
             });
-
         }).catch(e=>{console.log(e)
         });
     }else{
-        return new Error();
+        console.error('imposible registrar service worker')
     }
 
 })
