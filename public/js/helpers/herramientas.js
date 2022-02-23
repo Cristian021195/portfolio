@@ -7,31 +7,31 @@ export function herramientas(){
     const _herramientas = [
         {
             titulo:'Paquete Office',
-            img:`${ruta.publica_local}img/metas/office.svg`,
+            img:`${ruta.publica}img/metas/office.svg`,
             desc:`Paquete Office, (Word, Excel, Powerpoint)`,
             list:['Etiquetas basicas y estandar.','Atributos de accesibilidad','Metaetiquetas para SEO y PWA','Insercion de Videos, Audios.','Formularios','Templates', 'Svg']
         },
         {
             titulo:'Postman',
-            img:`${ruta.publica_local}img/metas/postman.svg`,
+            img:`${ruta.publica}img/metas/postman.svg`,
             desc:`Testing de Rest API's.`,
             list:['Selectores en cascada','Especificidad de selectores','Variables','First Mobile']
         },
         {
             titulo:'Adobe XD',
-            img:`${ruta.publica_local}img/metas/adobe-xd.svg`,
+            img:`${ruta.publica}img/metas/adobe-xd.svg`,
             desc:`Diseño de logos, e interfaces.`,
             list:['const, let, var', 'Funciones flecha','Clases, instancias, herencia', 'Fetch API', 'Websocket client']
         },
         {
             titulo:'Figma',
-            img:`${ruta.publica_local}img/metas/figma.svg`,
+            img:`${ruta.publica}img/metas/figma.svg`,
             desc:`Diseño de logos, e interfaces.`,
             list:[]
         },
         {
             titulo:'Idiomas',
-            img:`${ruta.publica_local}img/metas/languaje.svg`,
+            img:`${ruta.publica}img/metas/languaje.svg`,
             desc:`Inglés intermedio para lectura y escritura`,
             list:[]
         }
