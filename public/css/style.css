@@ -386,8 +386,8 @@ section p, ._proyectos{
 /*KEYFRAMES ANIMACIONES*/
 .pulse {
     justify-content: center;
-    width: 25em;
-    height: 25em;
+    width: 18em;
+    height: 18em;
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
