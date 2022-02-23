@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }                
     }
     if('serviceWorker' in navigator){
-        navigator.serviceWorker.register('../../sw.js')
+        navigator.serviceWorker.register('https://cristian021195.github.io/portfolio/sw.js')
         .then((swReg)=>{
             swRegistration = swReg;
             console.log('¡Service worker registrado!')
