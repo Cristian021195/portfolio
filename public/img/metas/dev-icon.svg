@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <filter id="Trazado_1" x="163.76" y="91.202" width="190.115" height="328.298" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.29"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_2" x="11.469" y="147.453" width="167.047" height="227.047" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.29"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_3" x="339.469" y="147.453" width="167.047" height="227.047" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.29"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-dev-icon">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="dev-icon" clip-path="url(#clip-dev-icon)">
+    <circle id="Elipse_1" data-name="Elipse 1" cx="256" cy="256" r="256" fill="#ff5965"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_1)">
+      <path id="Trazado_1-2" data-name="Trazado 1" d="M0,272,145.375,1.2,109.636-26.3-14.74,256.465,0,272" transform="translate(190.5 127.5)" fill="#f5f5f5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_2)">
+      <path id="Trazado_2-2" data-name="Trazado 2" d="M0,57V.891L-76.969-41.016-.029-83.048l.045-57L-137.016-64.969l-.016,46.953L0,57" transform="translate(160.5 297.5)" fill="#f5f5f5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_3)">
+      <path id="Trazado_3-2" data-name="Trazado 3" d="M-137.016,57V.891l76.969-41.906-76.94-42.032-.045-57L0-64.969.016-18.016-137.016,57" transform="translate(488.5 297.5)" fill="#f5f5f5"/>
+    </g>
+  </g>
+</svg>

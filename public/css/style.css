@@ -1,0 +1,564 @@
+/*CONFIG Y COLORES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --scroll-thumb: rgba(0, 0, 0, 0.40);
+    --scroll-primary:#0d6efd;
+    --scroll-secondary: #6c757d;
+    --scroll-success:#198754;
+    --scroll-pagado:#00b81f;
+    --scroll-danger:#dc3545;
+    --scroll-warning:#ffc107;
+    --scroll-info:#0dcaf0;/*f8f9fa*/
+    --scroll-light:#e2e2e2;
+    --scroll-dark:#343a40;
+    --scroll-white:#fff;
+
+    --scroll-primary-2:rgba(13, 109, 253, 0.699);
+    --scroll-secondary-2: rgba(108, 117, 125, 0.644);
+    --scroll-success-2:rgba(25, 135, 84, 0.623);
+    --scroll-pagado-2:rgba(0, 184, 31, 0.616);
+    --scroll-danger-2:rgba(220, 53, 70, 0.651);
+    --scroll-warning-2:rgba(255, 193, 7, 0.616);
+    --scroll-info-2:rgba(13, 202, 240, 0.603);
+    --scroll-light-2:rgba(248, 249, 250, 0.596);
+    --scroll-dark-2:rgba(52, 58, 64, 0.671);
+    --scroll-white-2:rgba(255, 255, 255, 0.582);
+}
+a{
+    color: #212529;
+    text-decoration: none;
+}
+.salmon{
+    background-color: #FF5965;
+}
+a:hover{
+    cursor: pointer;
+}
+/*TRADUCTOR*/
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important;
+}
+.goog-te-banner-frame.skiptranslate{
+    display:none!important;
+}
+.idioma{
+    display: none!important;
+}
+.gt_select{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-bottom: 1em;
+}
+.gt_select select{
+    background-color: #2c3035;
+    border: none!important;
+    font-size: 0.8em;
+    color: #e4e4e4;
+    margin-left: 1em;
+}
+.gt_select select::-webkit-scrollbar{
+    width: 12px;
+    background-color: #2c3035;
+}
+.gt_select select::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--scroll-light);
+}
+
+/*GENERALES*/
+body{
+    top:0px!important;
+    scrollbar-width: thin;
+    background-color: whitesmoke;
+}
+.screen-loader{
+    background-color: rgba(0, 0, 0, 0.70);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.screen-loader img{
+    border: #00b81f 5px;
+}
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color: var(--scroll-light);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--scroll-thumb);
+}
+
+.primary-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-primary);
+}
+.warning-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-warning);
+}
+.info-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-info);
+}
+.light-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-light);
+}
+.dark-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-dark);
+}
+.white-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-white);
+}
+.danger-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-danger);
+}
+.secondary-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-secondary);
+}
+.success-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-success);
+}
+.pagado-scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-pagado);
+}
+
+header{
+    /*background-color: rgba(0, 0, 0, 0.801);*/
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(0.3px);
+    border-radius: 2em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#modal-content, #modal-dialog{
+    background-color: #f0daff;
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+}
+#_inner{
+    background-color: whitesmoke;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.boton { border-radius: 1em; padding: 0px 0.3em; border: none; box-shadow: 0px 1px 2px; }
+
+.boton:hover { color: var(--scroll-dark); transition: all 0.4s ease 0s; }
+
+#anterior:hover, #siguiente:hover { background-color: rgb(247, 179, 146); }
+
+.piel { background-color: rgb(231, 161, 126); }
+
+.verde { background-color: rgb(101, 178, 126); }
+
+.verde:hover { background-color: rgb(135, 197, 155); }
+
+footer{
+    position: relative;
+}
+header li{
+    display: flex;
+    top: .2em;
+}
+.scrollactive{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 2em;
+    transition: 1s all;
+}
+footer a{
+    color: #e4e4e4;
+}
+.navbar-line{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.side-menu{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+#darken2{
+    overflow-y: hidden;
+}
+.darken{
+    animation: showDarken 0.5s forwards;
+}
+.darken3{
+    animation: showDarken 0.5s forwards;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+.modal p, .modal ul li{
+    font-size: 1.2em;
+}
+.darken-hide{
+    animation: hideDarken 0.5s forwards;
+}
+#menu{
+    position: fixed;
+    background-color: var(--scroll-dark);
+    width: 50%;
+    height: 100vh;
+    font-size: 1.8em;
+    display: flex;
+}
+#menu ul{
+    transform: rotateX(-40deg) rotateY(10deg);
+}
+#menu ul li{
+    margin-bottom: 0.2em;
+    transform: rotateX(-20deg) rotateY(0deg);
+    /*text-transform: capitalize;*/
+    font-family: 'Bebas Neue';
+}
+.bubble-menu{
+    position: fixed;
+    background-color: #ffc107;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    right: 0;
+    border: solid whitesmoke 0.3em;
+    transition: 1s;
+    transform: rotate(0deg);
+}
+.bubble-menu:focus{
+    transition: 1s;
+    background-color: #ffc107;
+    transform: rotate(90deg);
+}
+#menu li:hover{
+    transition: 1s;
+    box-shadow: inset 0.4em 0 0 0 rgba(255, 255, 255,0.6);
+}
+.toggle-menu-hide{
+    animation: hideMenu 0.5s forwards;
+}
+.toggle-menu-show{
+    animation: showMenu 0.5s forwards;
+}
+/*SECCIONES*/
+#listado_conocimientos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#exampleModal ul li{
+    list-style: disc;
+    list-style-position: inside;
+}
+#referencias img{
+    box-shadow: 0.5em 0.5em 0.5em rgb(0 0 0 / 40%);
+}
+.tarjeta, .tarjeta-ns{
+    width: 10em;
+    margin: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue';
+    color: #292d31;
+    transition: all 0.4s;
+}
+.tarjeta:hover{
+    transform: scale(1.2);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.tarjeta img{
+    width: 10em;
+}
+.introduccion{
+    position: relative;
+    padding: 5em;
+    clip-path: polygon(0 0, 95% 0%, 100% 100%, 5% 100%);
+    z-index: -50;
+}
+section{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    color: #343a40;
+}
+footer h1{
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+}
+footer ul a, footer p{
+    font-family: 'Ubuntu';
+}
+footer ul a:hover { color: white; }
+footer p{
+    font-size: 1.5em;
+}
+h2{
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+footer ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section p, ._proyectos{
+    padding: 1em;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'Hind Siliguri';
+    font-weight: 500;
+}
+.responsive-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 80vh;   
+}
+.responsive-img::-webkit-scrollbar{
+    width: 12px;
+    background-color: var(--scroll-light);
+}
+.responsive-img::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--scroll-secondary);
+}
+.responsive-no-border img{
+    max-width: 100%;
+}
+.responsive-img img{
+    max-width: 50%;
+    margin:1em;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.40);
+}
+.saludo{
+    height: 5rem;
+    font-size: 3em;
+}
+.saludo::before{
+    content: '';
+    color: rgba(0, 0, 0, 0);
+    animation: saludoAnimation 8s infinite;
+}
+.fadeUp{
+    animation: fadeUpAnimation 0.7s linear;
+}
+/*SVG SHAPES*/
+.custom-bg{
+    background-color: #fd8991;
+}
+.custom-bg-1{
+    background-color: #e5baff;
+}
+.custom-bg-2{
+    background-color: #F7B392;
+}
+.custom-bg-3{
+    background-color: #AFDAE7;
+}
+.custom-bg-5{
+    background-color: #fff799;
+}
+.custom-bg-6{
+    background-color: #212529;
+}
+
+/*KEYFRAMES ANIMACIONES*/
+.pulse {
+    justify-content: center;
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 whitesmoke;
+      box-shadow: 0 0 0 0 whitesmoke;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 3em rgba(0,0,0,0);
+        box-shadow: 0 0 0 3em rgba(0,0,0,0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+  }
+@keyframes fadeUpAnimation{
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+@keyframes showMenu{
+    from{
+        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+    }to{
+        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    }
+}
+@keyframes hideMenu{
+    from{
+        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    }to{
+        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+    }
+}
+@keyframes showDarken{
+    from{
+        background-color: none;
+    }to{
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+}
+@keyframes hideDarken{
+    from{
+        background-color: rgba(0, 0, 0, 0.548);
+    }to{
+        background-color: none;
+    }
+}
+@keyframes saludoAnimation{
+    0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+    20%{color: #252a2e;content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+    40%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+
+    60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    80%{color: #252a2e;content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+}
+@keyframes slide{
+    0%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    33%{
+      transform: translateX(15%);
+      opacity: 0;
+    }
+    66%{
+      transform: translateX(-15%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+
+.slideOut{
+    animation: slide;
+    animation-duration: .4s;
+}
+.galery-on{
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    text-align: center;
+    font-size: 2em;
+}
+.galery-on span{
+    color: whitesmoke;
+}
+.galery-on img{
+    color: whitesmoke;
+    max-width: 95%;
+}
+#foto-perfil{
+    border-radius: 0.4em;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width:600px) {
+    #menu{
+        width: 65%;
+        font-size: 1.4em;
+    }
+    #menu ul{
+        padding-left: 0.4em;
+    }
+    .saludo{
+        height: 5rem;
+        font-size: 2em;
+    }
+    section h1, footer h1{
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 1em;
+    }
+    #_descripcion{
+        font-size: 0.75em;
+        line-height: 1;
+    }
+    .responsive-img img{
+        max-width: 80%;
+        margin-bottom:0.4em;
+        border-radius:0;
+        border: none;
+    }
+    #foto-perfil{
+        width: 200px;
+    }
+    .tarjeta, .tarjeta-ns{
+        width: 5em;
+        margin: 1em;
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+    }
+    .tarjeta img, .tarjeta-ns img{
+        width: 5em;
+        border-radius:0.3em;
+    }
+    .tarjeta:hover{
+        transform: scale(1.6);
+    }
+    section p, ._proyectos{
+        font-size: 1.2em;
+        padding: 0.5em;
+        border-radius: 0.4em;
+        margin-bottom: 1em;
+    }
+    ._proyectos{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:1000px) {
+    header{
+        font-size: 0.8em;
+        border-radius: 1em;
+    }
+    .scrollactive{
+        /*background-color: rgba(255, 255, 255, 0.25);*/
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+        border-radius: 0;
+        box-shadow: inset 0em -0.4em whitesmoke;
+        transition: 1s all;
+    }
+}

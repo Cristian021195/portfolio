@@ -1,0 +1,69 @@
+1 - soft ui design - bootstrap 5 fixed navbar -> usar como ejemplo, y las cards con hover.
+	( https://demos.creative-tim.com/marketplace/soft-ui-design-system-pro/pages/coworking.html ) - ICONOS https://css.gg/app?s=phone
+2 - implementar botones propios, estilos glasy y solidos.
+3 - div en poligonos con sombras o degrades como background
+4 - efecto scroll
+5 - remover efecto focus en botones. mejorar efecto hover: USO DE DIFERENTES CURSORES
+6 - Realizar una unica linea de diseño, no muchos cambios, quizas un modo noche, pero nada mas.
+7 - si todo el landing es vertical seguimos el punto 6, sino realizamos efectos de transicion derecha, izquiera con zoom y
+	con perpectiva suave, mientras hace el efecto, el div poligono modifica sus valores. (obvio de manera suave)
+8 - Foto portada con circular medio, o con borders si la ponemos a la izquierda o derecha. bordes blancos y con sombras suaves
+9 - No olvidar metadatas, o poner traduccion de la pagina, BUENA ORTOGRAFIA y mapa de caracteres correcto. contacto sera sección
+10 - si vamos a cargarlo de fuentes, imagenes y otros servicios, es RECOMENDABLE hacer un loader al inicio del portfolio
+11 - Hacerla PWA no olvidar, barra de color.
+12 - Resumen, idea glasy, con fuentes contrastadas, orden de tamaños segun elementos pero no muy variado.
+
+
+Estructura: secciones
+	-> Introduccion con nombre y Foto + Pequeña descripcion
+	-> Estudios y enlaces a referencias
+	-> Conocimientos expresos, descripcion de cada uno
+	-> Mis metas
+	-> Mis proyectos realizados. cards y luego render en section.
+	-> Contacto
+
+INTRODUCCION:
+	Hola, soy Cristian Ismael Gramajo y soy desarrollador web Jr. 
+	Actualmente  Tengo 25 años, estoy trabajando como agente telefonico en Teleperformance, pero creo que es hora de dedicarme a lo que quiero
+	y crecer en el sector correspondiente.
+	El desarrollo web es una de mis pasiones, y aun mi meta.
+
+	Realizo trabajos Freelance, enfocado en aplicaciones web de diseño moderno y funcionalidad aplicada con bases de datos y uso adecuado de backend.
+
+	Estuve aplicando mis Conocimientos y perfeccionandolos a lo largo del tiempo, webapps para amigos con generacion de comprobantes, web publicas, y proyectos personales
+	que aun estan pendientes para aplicar buenas practicas.
+
+ESTUDIOS:
+	Actualmente estoy estudiando Licenciatura en Informatica en la Universidad Nacional de Tucumán la cual me esta dando bases solidas en algoritmos, estructuras de datos, paradigmas, y 
+	bases de datos.
+
+	De todas formas ya tengo en mi poder un titulo terciario: Técnico Superior en Computación y Redes, en el cual me avoque mucho mas al desarrollo que soporte en si. 
+
+	En cuanto Mi estudio secundario (Instituto tecnico de aguilares), Tengo el titulo de Maestro Mayor de Obras, si bien no tuve contacto con el desarrollo de software, 
+	tengo adaptado una mirada critica en cuanto se trata de diseño, y que algo se vea bien.
+
+CONOCIMIENTOS: 
+	En estos dos años un tanto interrumpidos por mi actual trabajo, siempre trate de darme tiempo para aprender y no dejar de lado el desarrollo.
+	Actualmente tengo Conocimientos Suficientes en las tecnologias HTML5, CSS3, JavaScript (ES5 / ES6) en cuanto a frontend se refiere, y por frameworks 
+	ya trabaje con Boostrap 3,4,5, Materialize, JQuery, React, Aunque debo admitir que las ultimas versiones de JavaScript me dejaron mas que satisfecho.
+
+	Por otro lado, en el backend tuve mucho mas contacto con PHP 5 Y 7, aunque mi anhelo es usar mi tiempo en NodeJs, separando el backend del fron con la simpleza,
+	que nos ofrece express como framework, y en cuanto a bases de datos para ser honessto me siento muy comodo con el Sistema relacional, Mysql me encanta y hasta ahora
+	solo use ese gestor.
+
+METAS:
+	a lo largo de lo escrito, habran notado que tengo mucho interes por JavaScript, me gusta la idea que trae en si, usarlo en backend y frontend me parece espectacular
+	A futuro me encantaria aprender mucho mas a fondo React Native, o Flutter, y dedicarme al desarrollo movil.
+
+	Sea con alguna empresa o socio, mis metas son estas, mientras tanto cumplire y aprenderé lo que sea necesario para mantenerme en el desarrollo en general.
+	
+PROYECTOS:
+	Mas alla de los datos que ya tengan de mi, les dejo unos pequeños proyectos, algunos son libres de probar, otros solo con descripcion,
+	Aqui veran que ya tengo manejo con servidores apache en servicios de host compartido, como es el caso de hostinger, 000webhost, infinity free, con manejo de cpanel.
+
+	y por otro lado ya tengo dos pequeñas aplicaciones de NodeJs desplegadas en heroku, aun quiero aprender mas sobre este servicio.
+
+CONTACTO:
+	Si crees que puedo ser de ayuda puedes enviarme un mail o contacttarme con alguna de estas redes sociales.
+
+	Facebook - Twitter - Gmail - Github - LinkedIn - Whatsapp/Telegram (+543865332311)
