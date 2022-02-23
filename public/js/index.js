@@ -15,11 +15,13 @@ const $loader = document.getElementById('loader');
 const $main = document.getElementById('main');
 const $header = document.getElementsByTagName('header')[0];
 const $footer = document.getElementById('contacto');
+const $bubble_menu = document.getElementById('btn-menu');
 let swRegistration = null;
 
 $main.style.display = 'none';
 $header.style.display = 'none';
 $footer.style.display = 'none';
+$bubble_menu.style.display = 'none';
 scrollTo(0,0)
 
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -72,4 +74,5 @@ window.addEventListener('load', ()=>{
     $main.style.display = 'block';
     $header.style.display = 'block';
     $footer.style.display = 'block';
+    $bubble_menu.style.display = 'block';
 })
