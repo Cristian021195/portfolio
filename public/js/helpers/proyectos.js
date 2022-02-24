@@ -143,7 +143,7 @@ export function proyectos(){
         $titulo.textContent = _proyecto.titulo;
         $descripcion.innerHTML = _proyecto.descripcion;
         $link.setAttribute('href', _proyecto.link);
-        $contador.innerHTML = `1 / ${actual}`
+        $contador.innerHTML = `<span class="notranslate">${actual} / 5</span>`;
 
         _proyecto.img.forEach(src => {
             let $img = document.createElement('img'); $img.src = src; $img.classList.add('galery');
