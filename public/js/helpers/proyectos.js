@@ -154,32 +154,34 @@ export function proyectos(){
         let texto = ''
         if(document.cookie.includes('es/en')){
             if(_proyectos.titulo == 'Akins'){
-                texto = `My first static and layout page. Made with HTML, CSS, JavaScript (JQuery). It served to promote the site of a then video game server. `;
+                texto = `It was my first static page that works to promote the site of a then video game server. Made with HTML, CSS, and JQuery.`;
             }else if(_proyectos.titulo == 'Hora Bondi'){
-                texto = `This is a SPA and PWA for public access and for daily use, in which we can check the schedules of urban groups in the province of Tucumán, including: Exprebus, Tesa, Gutierrez.
-                We can also check prices in advance, see publications of each company or the site, and print the schedules. Built in HTML, CSS, JS, Materialize, PHP and Mysql.`;
+                texto = `
+This is a SPA and PWA, in which we can consult the schedules of the urban groups of the province of Tucumán. Among them: Exprebus, Tesa, Gutiérrez. In addition, we can consult the prices, see publications of each company or the site, and print the schedules. Built in HTML, CSS, JS, Materialize, PHP and MySQL.`;
             }else if(_proyectos.titulo == 'Panerita'){
-                texto = `This is a personal project, a SPA and PWA for a third party of said company, which is a distributor of food products in both the north and south of Tucumán.
-                Here we have roles with different permissions, Super Administrator, Administrator, Salesperson and Secretary. Built in HTML, CSS, JS, Bootstrap 5, PHP and Mysql. <br><b>User: </b>admin@admin.com / <b>Password: </b>administrador`;
+                texto = `This was a personal project for a SPA and PWA for an outsourced company, which is a distributor of food products. <br>
+The application works with roles and different permissions, generates, edits and prints receipts, manages product stock and analyzes the number of products sold by date.
+Built in HTML, CSS, JS, Bootstrap 5, PHP and MySQL <br><b>User: </b>admin@admin.com / <b>Password: </b>administrador`;
             }else if(_proyectos.titulo == 'Notas'){
-                texto = `Made with Bootstrap, HTML and JS, it is a PWA focused on the offline operation of a simple notes application, with the PouchDB (indexDB) library and Using a pivot table. `;
+                texto = `It is a PWA focused on the offline operation of a simple notes application, with the PouchDB library and the use of a dynamic table that I designed. Made with Bootstrap, HTML and JS.`;
             }else if(_proyectos.titulo == 'Climap'){
                 texto = `
-                Made with React JS, and CSS, it is a PWA with a very simple design, with the use of React Router and Hosted in google cloud (which allows a better experience with the routes), it makes use of Openweathermap and Mapbox.`;
+                It is a PWA with a very simple design, with the use of React Router and hosted on Google Cloud Services (which allows a better experience with the routes), it makes use of the Openweathermap and Mapbox APIs. Made with React JS, and CSS.`;
             }
         }else if(document.cookie.includes('es/es')){
             if(_proyectos.titulo == 'Akins'){
-                texto = `Mi primer Pagina estatica y de Maquetacion. Hecha con HTML, CSS, JavaScript (JQuery). Sirvio para promocionar el sitio de un entonces servidor de videojuego.`;
+                texto = `Fue mi primer página estática que sirvió para promocionar el sitio de un entonces servidor de videojuego. Hecha con HTML, CSS, y JQuery.`;
             }else if(_proyectos.titulo == 'Hora Bondi'){
-                texto = `Esta es una SPA y PWA de acceso publico y de uso diario, en la cual podemos consultar los horarios de los colectivos urbanos de la provincia de Tucumán, entre ellos: Exprebus, Tesa, Gutierrez.
-                Ademas podemos Consultar los precios de antemano, ver publicaciones de cada empresa o del sitio, e imprimir los horarios. Construido en HTML, CSS, JS, Materialize, PHP y Mysql.`;
+                texto = `Esta es una SPA y PWA, en la cual podemos consultar los horarios de los colectivos urbanos de la provincia de Tucumán. Entre ellos: Exprebus, Tesa, Gutiérrez. Además, podemos consultar los precios, ver publicaciones de cada empresa o del sitio, e imprimir los horarios. Construido en HTML, CSS, JS, Materialize, PHP y MySQL.`;
             }else if(_proyectos.titulo == 'Panerita'){
-                texto = `Este es un proyecto personal una SPA y PWA para una tercierizada de dicha empresa, la cual es distribuidora de productos alimenticios tanto en norte como en sur tucumano.
-                Aqui tenemos roles con diferentes permisos, Super Administrador, Administrador, Vendedor y Secretaria. Construido en HTML, CSS, JS, Bootstrap 5, PHP y Mysql. <br><b>Usuario: </b>admin@admin.com / <b>Contraseña: </b>administrador`;
+                texto = `Este fue un proyecto personal una SPA y PWA para una tercerizada de dicha empresa, la cual es distribuidora de productos alimenticios. <br>
+La aplicación trabaja con roles y diferentes permisos, genera, edita e imprime comprobantes, maneja stock de productos y analiza la cantidad de productos vendidos por fechas.
+Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.
+<br><b>Usuario: </b>admin@admin.com / <b>Contraseña: </b>administrador`;
             }else if(_proyectos.titulo == 'Notas'){
-                texto = `Hecho con Bootstrap, HTML y JS, es una PWA centrada en el funcionamiento offline de una aplicacion simple de notas, con la libreria PouchDB (indexDB) y Uso de una tabla dinamica.`;
+                texto = `Es una PWA centrada en el funcionamiento offline de una simple aplicación de notas, con la librería PouchDB y uso de una tabla dinámica que yo diseñé. Hecho con Bootstrap, HTML y JS.`;
             }else if(_proyectos.titulo == 'Climap'){
-                texto = `Hecho con React JS, y CSS, es una PWA de muy simple diseño, con uso de React Router y Hosteada en google cloud (lo que permite mejor experiencia con las rutas), hace uso de Openweathermap y Mapbox.`;
+                texto = `Es una PWA de muy simple diseño, con uso de React Router y alojada en Google Cloud Services (lo que permite mejor experiencia con las rutas), hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.`;
             }
         }
         return texto;
