@@ -12,8 +12,7 @@ export function proyectos(){
     const _proyectos = [
         {
             titulo:'Akins',
-            descripcion:`Mi primer Pagina estatica y de Maquetacion. Hecha con HTML, CSS, JavaScript (JQuery). 
-            Sirvio para promocionar el sitio de un entonces servidor de videojuego.`,
+            descripcion:`Fue mi primer página estática que sirvió para promocionar el sitio de un entonces servidor de videojuego. Hecha con HTML, CSS, y JQuery.`,
             subdescripcion: `<ul>
             <li>Estructura Básica de Sitios estaticos</li>
             <li>Aprendizaje de Hojas de estilos</li>
