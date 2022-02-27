@@ -28,10 +28,7 @@ export function proyectos(){
         },
         {
             titulo:'HoraBondi',
-            descripcion:`Esta es una SPA y PWA de acceso publico y de uso diario, en la cual podemos consultar los horarios de los 
-            colectivos urbanos de la provincia de Tucumán, entre ellos: Exprebus, Tesa, Gutierrez. <br>Ademas podemos 
-            Consultar los precios de antemano, ver publicaciones de cada empresa o del sitio, recibir notificaciones, e imprimir los horarios. 
-            Construido en HTML, CSS, JS, Materialize, PHP y Mysql.`,
+            descripcion:`Esta es una SPA y PWA, en la cual podemos consultar los horarios de los colectivos urbanos de la provincia de Tucumán. Entre ellos: Exprebus, Tesa, Gutiérrez. Además, podemos consultar los precios, ver publicaciones de cada empresa o del sitio, e imprimir los horarios. Construido en HTML, CSS, JS, Materialize, PHP y MySQL.`,
             subdescripcion: `<ul>
             <li>Uso offline de aplicación para consultar horarios</li>
             <li>Guardado de ultimas publicaciones.</li>
@@ -50,9 +47,9 @@ export function proyectos(){
         },
         {
             titulo:'Panerita',
-            descripcion:`Este es un proyecto personal una SPA y PWA para una tercierizada de dicha empresa, la cual es distribuidora de productos
-            alimenticios tanto en norte como en sur tucumano.<br> Aqui tenemos roles con diferentes permisos, Super Administrador, Administrador, Vendedor y Secretaria.
-            Construido en HTML, CSS, JS, Bootstrap 5, PHP y Mysql.`,
+            descripcion:`Este fue un proyecto personal una SPA y PWA para una tercerizada de dicha empresa, la cual es distribuidora de productos alimenticios. <br>
+La aplicación trabaja con roles y diferentes permisos, genera, edita e imprime comprobantes, maneja stock de productos y analiza la cantidad de productos vendidos por fechas.
+Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
             subdescripcion: `<ul>
             <li>Gestión de Usuarios y Clientes</li>
             <li>Ventas y generación de comprobantes</li>
@@ -73,7 +70,7 @@ export function proyectos(){
         },
         {
             titulo:'Notas',
-            descripcion:`Hecho con Bootstrap, HTML y JS, es una PWA centrada en el funcionamiento offline de una aplicacion simple de notas, con la libreria PouchDB (indexDB) y Uso de una tabla dinamica.`,
+            descripcion:`Es una PWA centrada en el funcionamiento offline de una simple aplicación de notas, con la librería PouchDB y uso de una tabla dinámica que yo diseñé. Hecho con Bootstrap, HTML y JS.`,
             subdescripcion: `<ul>
             <li>PWA</li>
             </ul>`,
@@ -86,7 +83,7 @@ export function proyectos(){
         },
         {
             titulo:'Climap',
-            descripcion:`Hecho con React JS, y CSS, es una PWA de muy simple diseño, con uso de React Router y Hosteada en google cloud (lo que permite mejor experiencia con las rutas), hace uso de Openweathermap y Mapbox.`,
+            descripcion:`Es una PWA de muy simple diseño, con uso de React Router y alojada en Google Cloud Services (lo que permite mejor experiencia con las rutas), hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.`,
             subdescripcion: `<ul>
             <li>PWA</li>
             </ul>`,
