@@ -357,7 +357,8 @@ section p, ._proyectos{
 .responsive-img img{
     max-width: 50%;
     margin:1em;
-    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.40);
+    /*box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.40);*/
+    object-fit: contain;
 }
 .saludo{
     height: 5rem;
@@ -369,7 +370,9 @@ section p, ._proyectos{
     animation: saludoAnimation 8s infinite;
 }
 .fadeUp{
-    animation: fadeUpAnimation 0.7s linear;
+    /*animation: fadeUpAnimation 0.7s linear;*/
+    animation: fadeAnimation 1s ease-in;
+
 }
 /*SVG SHAPES*/
 .custom-bg{
@@ -421,6 +424,14 @@ section p, ._proyectos{
     to{
       transform: translateX(0%);
       opacity: 1;
+    }
+}
+@keyframes fadeAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 @keyframes showMenu{
