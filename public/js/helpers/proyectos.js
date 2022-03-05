@@ -11,22 +11,6 @@ export function proyectos(){
     let inicio = 0;
     const _proyectos = [
         {
-            titulo:'Akins',
-            descripcion:`Fue mi primer página estática que sirvió para promocionar el sitio de un entonces servidor de videojuego. Hecha con HTML, CSS, y JQuery.`,
-            subdescripcion: `<ul>
-            <li>Estructura Básica de Sitios estaticos</li>
-            <li>Aprendizaje de Hojas de estilos</li>
-            <li>Creacion de Menu y Formularios.</li>
-            <li>Aprendizaje de Flexbox</li>
-            </ul>`,
-            img:[
-                './public/img/akins1.jpg',
-                './public/img/akins2.jpg',
-                './public/img/akins3.jpg'
-            ],
-            link:'https://cristian021195.github.io/Akins/'
-        },
-        {
             titulo:'HoraBondi',
             descripcion:`Esta es una SPA y PWA, en la cual podemos consultar los horarios de los colectivos urbanos de la provincia de Tucumán. Entre ellos: Exprebus, Tesa, Gutiérrez. Además, podemos consultar los precios, ver publicaciones de cada empresa o del sitio, e imprimir los horarios. Construido en HTML, CSS, JS, Materialize, PHP y MySQL.`,
             subdescripcion: `<ul>
@@ -93,6 +77,22 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/climap_mapa.jpg'
             ],
                 link:'https://climap-6e45e.web.app/'
+        },
+        {
+            titulo:'Akins',
+            descripcion:`Fue mi primer página estática que sirvió para promocionar el sitio de un entonces servidor de videojuego. Hecha con HTML, CSS, y JQuery.`,
+            subdescripcion: `<ul>
+            <li>Estructura Básica de Sitios estaticos</li>
+            <li>Aprendizaje de Hojas de estilos</li>
+            <li>Creacion de Menu y Formularios.</li>
+            <li>Aprendizaje de Flexbox</li>
+            </ul>`,
+            img:[
+                './public/img/akins1.jpg',
+                './public/img/akins2.jpg',
+                './public/img/akins3.jpg'
+            ],
+            link:'https://cristian021195.github.io/Akins/'
         }
     ]
 
@@ -151,9 +151,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         if(document.cookie.includes('es/en')){
             if(_proyectos.titulo == 'Akins'){
                 texto = `It was my first static page that works to promote the site of a then video game server. Made with HTML, CSS, and JQuery.`;
-            }else if(_proyectos.titulo == 'Hora Bondi'){
-                texto = `
-This is a SPA and PWA, in which we can consult the schedules of the urban groups of the province of Tucumán. Among them: Exprebus, Tesa, Gutiérrez. In addition, we can consult the prices, see publications of each company or the site, and print the schedules. Built in HTML, CSS, JS, Materialize, PHP and MySQL.`;
+            }else if(_proyectos.titulo == 'HoraBondi'){
+                texto = `This is a SPA and PWA, in which we can consult the schedules of the urban groups of the province of Tucumán. Among them: Exprebus, Tesa, Gutiérrez. In addition, we can consult the prices, see publications of each company or the site, and print the schedules. Built in HTML, CSS, JS, Materialize, PHP and MySQL.`;
             }else if(_proyectos.titulo == 'Panerita'){
                 texto = `This was a personal project for a SPA and PWA for an outsourced company, which is a distributor of food products. <br>
 The application works with roles and different permissions, generates, edits and prints receipts, manages product stock and analyzes the number of products sold by date.
@@ -167,7 +166,7 @@ Built in HTML, CSS, JS, Bootstrap 5, PHP and MySQL <br><b>User: </b>admin@admin.
         }else if(document.cookie.includes('es/es')){
             if(_proyectos.titulo == 'Akins'){
                 texto = `Fue mi primer página estática que sirvió para promocionar el sitio de un entonces servidor de videojuego. Hecha con HTML, CSS, y JQuery.`;
-            }else if(_proyectos.titulo == 'Hora Bondi'){
+            }else if(_proyectos.titulo == 'HoraBondi'){
                 texto = `Esta es una SPA y PWA, en la cual podemos consultar los horarios de los colectivos urbanos de la provincia de Tucumán. Entre ellos: Exprebus, Tesa, Gutiérrez. Además, podemos consultar los precios, ver publicaciones de cada empresa o del sitio, e imprimir los horarios. Construido en HTML, CSS, JS, Materialize, PHP y MySQL.`;
             }else if(_proyectos.titulo == 'Panerita'){
                 texto = `Este fue un proyecto personal una SPA y PWA para una tercerizada de dicha empresa, la cual es distribuidora de productos alimenticios. <br>

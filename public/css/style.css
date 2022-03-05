@@ -145,7 +145,8 @@ body::-webkit-scrollbar-thumb{
 header{
     /*background-color: rgba(0, 0, 0, 0.801);*/
     background-color: rgba(0, 0, 0, 0.5);
-    filter: blur(0.3px);
+    -webkit-filter: blur(0.3px);
+            filter: blur(0.3px);
     border-radius: 2em;
     text-transform: capitalize;
     font-weight: bold;
@@ -202,10 +203,12 @@ footer a{
     overflow-y: hidden;
 }
 .darken{
-    animation: showDarken 0.5s forwards;
+    -webkit-animation: showDarken 0.5s forwards;
+            animation: showDarken 0.5s forwards;
 }
 .darken3{
-    animation: showDarken 0.5s forwards;
+    -webkit-animation: showDarken 0.5s forwards;
+            animation: showDarken 0.5s forwards;
     overflow-y: scroll;
     transition: 0.5s;
 }
@@ -213,7 +216,8 @@ footer a{
     font-size: 1.2em;
 }
 .darken-hide{
-    animation: hideDarken 0.5s forwards;
+    -webkit-animation: hideDarken 0.5s forwards;
+            animation: hideDarken 0.5s forwards;
 }
 #menu{
     position: fixed;
@@ -254,10 +258,12 @@ footer a{
     box-shadow: inset 0.4em 0 0 0 rgba(255, 255, 255,0.6);
 }
 .toggle-menu-hide{
-    animation: hideMenu 0.5s forwards;
+    -webkit-animation: hideMenu 0.5s forwards;
+            animation: hideMenu 0.5s forwards;
 }
 .toggle-menu-show{
-    animation: showMenu 0.5s forwards;
+    -webkit-animation: showMenu 0.5s forwards;
+            animation: showMenu 0.5s forwards;
 }
 /*SECCIONES*/
 #listado_conocimientos{
@@ -292,7 +298,8 @@ footer a{
 .introduccion{
     position: relative;
     padding: 5em;
-    clip-path: polygon(0 0, 95% 0%, 100% 100%, 5% 100%);
+    -webkit-clip-path: polygon(0 0, 95% 0%, 100% 100%, 5% 100%);
+            clip-path: polygon(0 0, 95% 0%, 100% 100%, 5% 100%);
     z-index: -50;
 }
 section{
@@ -318,6 +325,10 @@ footer ul a, footer p{
 footer ul a:hover { color: white; }
 footer p{
     font-size: 1.5em;
+}
+.modal-conocimiento{
+    border: 0.3em solid #bb8baf;
+    border-radius: 0.5em;
 }
 h2{
     font-weight: bold;
@@ -358,7 +369,8 @@ section p, ._proyectos{
     max-width: 50%;
     margin:1em;
     /*box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.40);*/
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .saludo{
     height: 5rem;
@@ -367,11 +379,13 @@ section p, ._proyectos{
 .saludo::before{
     content: '';
     color: rgba(0, 0, 0, 0);
-    animation: saludoAnimation 8s infinite;
+    -webkit-animation: saludoAnimation 8s infinite;
+            animation: saludoAnimation 8s infinite;
 }
 .fadeUp{
     /*animation: fadeUpAnimation 0.7s linear;*/
-    animation: fadeAnimation 1s ease-in;
+    -webkit-animation: fadeAnimation 1s ease-in;
+            animation: fadeAnimation 1s ease-in;
 
 }
 /*SVG SHAPES*/
@@ -400,22 +414,41 @@ section p, ._proyectos{
     width: 18em;
     height: 18em;
     border-radius: 50%;
-    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
 }
-@keyframes pulse {
+@-webkit-keyframes pulse {
     0% {
-      -moz-box-shadow: 0 0 0 0 whitesmoke;
       box-shadow: 0 0 0 0 whitesmoke;
     }
     70% {
-        -moz-box-shadow: 0 0 0 3em rgba(0,0,0,0);
         box-shadow: 0 0 0 3em rgba(0,0,0,0);
     }
     100% {
-        -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
         box-shadow: 0 0 0 0 rgba(0,0,0,0);
     }
   }
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 whitesmoke;
+    }
+    70% {
+        box-shadow: 0 0 0 3em rgba(0,0,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+  }
+@-webkit-keyframes fadeUpAnimation{
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
 @keyframes fadeUpAnimation{
     from{
         transform: translateY(50%);
@@ -426,6 +459,14 @@ section p, ._proyectos{
       opacity: 1;
     }
 }
+@-webkit-keyframes fadeAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @keyframes fadeAnimation{
     from{
         opacity: 0;
@@ -434,18 +475,47 @@ section p, ._proyectos{
         opacity: 1;
     }
 }
+@-webkit-keyframes showMenu{
+    from{
+        -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+                clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+    }to{
+        -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    }
+}
 @keyframes showMenu{
     from{
-        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+                clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
     }to{
-        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    }
+}
+@-webkit-keyframes hideMenu{
+    from{
+        -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    }to{
+        -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+                clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
     }
 }
 @keyframes hideMenu{
     from{
-        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
     }to{
-        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+                clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+    }
+}
+@-webkit-keyframes showDarken{
+    from{
+        background-color: none;
+    }to{
+        background-color: rgba(0, 0, 0, 0.548);
     }
 }
 @keyframes showDarken{
@@ -455,12 +525,28 @@ section p, ._proyectos{
         background-color: rgba(0, 0, 0, 0.548);
     }
 }
+@-webkit-keyframes hideDarken{
+    from{
+        background-color: rgba(0, 0, 0, 0.548);
+    }to{
+        background-color: none;
+    }
+}
 @keyframes hideDarken{
     from{
         background-color: rgba(0, 0, 0, 0.548);
     }to{
         background-color: none;
     }
+}
+@-webkit-keyframes saludoAnimation{
+    0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+    20%{color: #252a2e;content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+    40%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+
+    60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    80%{color: #252a2e;content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
 }
 @keyframes saludoAnimation{
     0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
@@ -470,6 +556,24 @@ section p, ._proyectos{
     60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
     80%{color: #252a2e;content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
     100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+}
+@-webkit-keyframes slide{
+    0%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    33%{
+      transform: translateX(15%);
+      opacity: 0;
+    }
+    66%{
+      transform: translateX(-15%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
 }
 @keyframes slide{
     0%{
@@ -491,8 +595,10 @@ section p, ._proyectos{
 }
 
 .slideOut{
-    animation: slide;
-    animation-duration: .4s;
+    -webkit-animation: slide;
+            animation: slide;
+    -webkit-animation-duration: .4s;
+            animation-duration: .4s;
 }
 .galery-on{
     position: fixed;
