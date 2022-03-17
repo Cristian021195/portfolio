@@ -52,7 +52,6 @@
     <div id="darken3" class="darken3"></div>
     <div id="loader" class="screen-loader d-flex justify-content-center align-content-center align-items-center">
       <img src="./public/img/metas/dev-icon.svg" class="pulse border border-5 border-light"/>
-      <!--<lottie-player src="./public/img/lottie/dev-icon3.json" background="transparent"  speed="0.7" autoplay></lottie-player>-->
     </div>
 
     <button class="bubble-menu d-md-none" type="button" id="btn-menu"><i class="fas fa-bars"></i></button>
@@ -62,10 +61,9 @@
     </header>
       <main id="main">
           <section class="text-center introduccion" id="inicio">
-            <!--<article class="col-md-4 col-12">-->
                 <div class="intro-1 row">
                     <!--<img src="./public/img/metas/dev-icon.svg" class="border border-5 border-light rounded-circle mb-4" alt="" width="200">-->
-                    <div class="col-md-4 col-12 mx-auto mb-2">
+                    <div class="col-md-3 col-6 mx-auto mb-2">
                       <lottie-player src="./public/img/lottie/dev-icon3.json" class="circle-white" background="transparent" speed="0.7" autoplay></lottie-player>
                     </div>
                     <h1 id="saludo" class="saludo" alt="Hola, soy Cristian Gramajo, Desarrollador Web JR."></h1>
@@ -210,6 +208,7 @@
       <div id="google_translate_element"></div>
       <script type="text/javascript">
 	const $mail = document.getElementById('mail');
+  const $lottie_icon = document.getElementById('lottie-icon');
 	$mail.addEventListener('click', (e)=>{
 		e.preventDefault();
 		navigator.clipboard.writeText('cristiangramajo015@gmail.com').then(res=>alert('¡Mail copiado!'))
