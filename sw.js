@@ -1,6 +1,6 @@
 /*Asignamos nombre a nuestro Almacenamiento Cache*/
 
-const CACHE_NAME = 'portfolio-v6';
+const CACHE_NAME = 'portfolio-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -18,6 +18,7 @@ const urlsToCache = [
     './public/libraries/bootstrap/js/bootstrap.min.js',
     'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
     'https://kit.fontawesome.com/ebf30f2c4d.js',
+    'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
     './public/img/akins1.jpg',
     './public/img/akins2.jpg',
     './public/img/akins3.jpg',

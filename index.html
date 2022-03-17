@@ -43,6 +43,7 @@
     <!-- JSDelivr -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="./public/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://kit.fontawesome.com/ebf30f2c4d.js" crossorigin="anonymous"></script>
     <script src="./public/js/index.js" type="module"></script>
 </head>
@@ -51,6 +52,7 @@
     <div id="darken3" class="darken3"></div>
     <div id="loader" class="screen-loader d-flex justify-content-center align-content-center align-items-center">
       <img src="./public/img/metas/dev-icon.svg" class="pulse border border-5 border-light"/>
+      <!--<lottie-player src="./public/img/lottie/dev-icon3.json" background="transparent"  speed="0.7" autoplay></lottie-player>-->
     </div>
 
     <button class="bubble-menu d-md-none" type="button" id="btn-menu"><i class="fas fa-bars"></i></button>
@@ -60,9 +62,13 @@
     </header>
       <main id="main">
           <section class="text-center introduccion" id="inicio">
-                <div class="intro-1">
-                    <img src="./public/img/metas/dev-icon.svg" class="border border-5 border-light rounded-circle mb-4" alt="" width="200">
-                    <h1 id="saludo" class="saludo"></h1>
+            <!--<article class="col-md-4 col-12">-->
+                <div class="intro-1 row">
+                    <!--<img src="./public/img/metas/dev-icon.svg" class="border border-5 border-light rounded-circle mb-4" alt="" width="200">-->
+                    <div class="col-md-4 col-12 mx-auto mb-2">
+                      <lottie-player src="./public/img/lottie/dev-icon3.json" class="circle-white" background="transparent" speed="0.7" autoplay></lottie-player>
+                    </div>
+                    <h1 id="saludo" class="saludo" alt="Hola, soy Cristian Gramajo, Desarrollador Web JR."></h1>
                 </div>
           </section>
           <div class="custom-bg">

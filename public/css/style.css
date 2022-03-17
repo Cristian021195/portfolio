@@ -142,6 +142,11 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--scroll-pagado);
 }
 
+.circle-white{
+    border: 0.4em solid whitesmoke;
+    border-radius: 50%;
+}
+
 header{
     /*background-color: rgba(0, 0, 0, 0.801);*/
     background-color: rgba(0, 0, 0, 0.5);
