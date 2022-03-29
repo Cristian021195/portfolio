@@ -545,22 +545,22 @@ section p, ._proyectos{
     }
 }
 @-webkit-keyframes saludoAnimation{
-    0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
-    20%{color: #252a2e;content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
-    40%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+    0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web.";}
+    20%{color: #252a2e;content: "Hola, soy Cristian Gramajo, Desarrollador Web.";}
+    40%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web.";}
 
-    60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, Web Developer.";}
     80%{color: #252a2e;content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
-    100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, Web Developer.";}
 }
 @keyframes saludoAnimation{
-    0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
-    20%{color: #252a2e;content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
-    40%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web JR.";}
+    0%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web.";}
+    20%{color: #252a2e;content: "Hola, soy Cristian Gramajo, Desarrollador Web.";}
+    40%{color: rgba(0, 0, 0, 0);content: "Hola, soy Cristian Gramajo, Desarrollador Web.";}
 
-    60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
-    80%{color: #252a2e;content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
-    100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, JR Web Developer.";}
+    60%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, Web Developer.";}
+    80%{color: #252a2e;content: "Hi, I'm Cristian Gramajo, Web Developer.";}
+    100%{color: rgba(0, 0, 0, 0);content: "Hi, I'm Cristian Gramajo, Web Developer.";}
 }
 @-webkit-keyframes slide{
     0%{
