@@ -2,8 +2,8 @@
 
 const CACHE_NAME = 'portfolio-v10';
 const urlsToCache = [
-    './',
-    './index.html',
+    /*'./',
+    './index.html',*/
     './public/css/style.css',
     './public/js/index.js',
     './public/js/helpers/conocimientos.js',
