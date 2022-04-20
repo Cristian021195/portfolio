@@ -78,7 +78,6 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
             ],
                 link:'https://climap-6e45e.web.app/'
         },
-        ,
         {
             titulo:'Escritos',
             descripcion:`Es una PWA, alojada en Firebase Hosting. Hace uso de una API propia montada en heroku y otra publica, además puede notificarte cuando haya nuevos escritos. Hecho con React JS, y CSS.`,
@@ -140,6 +139,7 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         }else{
             actual --;
         }
+        console.log(_proyectos)
         _proyectos[inicio].descripcion = cambiarIdioma(_proyectos[inicio]);
         renderizar(_proyectos[inicio], actual, cont);
     })
