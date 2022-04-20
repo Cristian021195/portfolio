@@ -1,6 +1,6 @@
 /*Asignamos nombre a nuestro Almacenamiento Cache*/
 
-const CACHE_NAME = 'portfolio-v10';
+const CACHE_NAME = 'portfolio-v11';
 const urlsToCache = [
     /*'./',
     './index.html',*/
@@ -11,7 +11,6 @@ const urlsToCache = [
     './public/js/helpers/herramientas.js',
     './public/js/helpers/loader.js',
     './public/js/helpers/menu.js',
-    './public/js/helpers/proyectos.js',
     './public/js/helpers/rutas.js',
     './public/js/helpers/secciones.js',
     './public/libraries/bootstrap/css/bootstrap.min.css',
