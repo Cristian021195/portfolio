@@ -67,7 +67,7 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         },
         {
             titulo:'Climap',
-            descripcion:`Es una PWA de muy simple diseño, con uso de React Router y alojada en Google Cloud Services (lo que permite mejor experiencia con las rutas), hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.`,
+            descripcion:`Es una PWA de muy simple diseño, con uso de React Router y alojada en Firebase Hosting (lo que permite mejor experiencia con las rutas), hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.`,
             subdescripcion: `<ul>
             <li>PWA</li>
             </ul>`,
@@ -77,6 +77,21 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/climap_mapa.jpg'
             ],
                 link:'https://climap-6e45e.web.app/'
+        },
+        ,
+        {
+            titulo:'Escritos',
+            descripcion:`Es una PWA, alojada en Firebase Hosting. Hace uso de una API propia montada en heroku y otra publica, además puede notificarte cuando haya nuevos escritos. Hecho con React JS, y CSS.`,
+            subdescripcion: `<ul>
+            <li>PWA</li>
+            </ul>`,
+            img:[
+                './public/img/escritos_splash.jpg',
+                './public/img/escritos_inicio.jpg',
+                './public/img/escritos_escritos.jpg',
+                './public/img/escritos_configuracion.jpg'
+            ],
+                link:'https://escritos021195.web.app/'
         },
         {
             titulo:'Akins',
@@ -96,10 +111,9 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         }
     ]
 
-    let long = _proyectos.length - 1; //2
-    let actual = 1;
     let cont = _proyectos.length;
-
+    let long = _proyectos.length - 1;
+    let actual = 1;
     renderizar(_proyectos[inicio], actual, cont);
 
     $siguiente.addEventListener('click', (e)=>{
@@ -112,7 +126,6 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
             actual = 1;
         }
         _proyectos[inicio].descripcion = cambiarIdioma(_proyectos[inicio]);
-        //console.log(cambiarIdioma(_proyectos[inicio]))
         
         renderizar(_proyectos[inicio], actual, cont);
     })
@@ -139,7 +152,7 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         $titulo.textContent = _proyecto.titulo;
         $descripcion.innerHTML = _proyecto.descripcion;
         $link.setAttribute('href', _proyecto.link);
-        $contador.innerHTML = `<span class="notranslate">${actual} / 5</span>`;
+        $contador.innerHTML = `<span class="notranslate">${actual} / ${cont}</span>`;
 
         _proyecto.img.forEach(src => {
             let $img = document.createElement('img'); $img.src = src; $img.classList.add('galery');
@@ -162,6 +175,9 @@ Built in HTML, CSS, JS, Bootstrap 5, PHP and MySQL <br><b>User: </b>admin@admin.
             }else if(_proyectos.titulo == 'Climap'){
                 texto = `
                 It is a PWA with a very simple design, with the use of React Router and hosted on Google Cloud Services (which allows a better experience with the routes), it makes use of the Openweathermap and Mapbox APIs. Made with React JS, and CSS.`;
+            }else if(_proyectos.titulo == 'Escritos'){
+                texto = `
+                Es una PWA, alojada en Firebase Hosting. Hace uso de una API propia montada en heroku y otra publica, además puede notificarte cuando haya nuevos escritos. Hecho con React JS, y CSS.`;
             }
         }else if(document.cookie.includes('es/es')){
             if(_proyectos.titulo == 'Akins'){
@@ -177,6 +193,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.
                 texto = `Es una PWA centrada en el funcionamiento offline de una simple aplicación de notas, con la librería PouchDB y uso de una tabla dinámica que yo diseñé. Hecho con Bootstrap, HTML y JS.`;
             }else if(_proyectos.titulo == 'Climap'){
                 texto = `Es una PWA de muy simple diseño, con uso de React Router y alojada en Google Cloud Services (lo que permite mejor experiencia con las rutas), hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.`;
+            }else if(_proyectos.titulo == 'Escritos'){
+                texto = `It's a PWA, hosted on Firebase Hosting. It makes use of its own API mounted on heroku and another one published, it can also notify you when there are new writings. Made with React JS, and CSS.`;
             }
         }
         return texto;
