@@ -90,7 +90,7 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/escritos_escritos.jpg',
                 './public/img/escritos_configuracion.jpg'
             ],
-                link:'https://escritos021195.web.app/'
+                link:'https://escritos-f9d8d.web.app/'
         },
         {
             titulo:'Akins',
