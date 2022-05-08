@@ -139,7 +139,7 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         }else{
             actual --;
         }
-        console.log(_proyectos)
+        //console.log(_proyectos)
         _proyectos[inicio].descripcion = cambiarIdioma(_proyectos[inicio]);
         renderizar(_proyectos[inicio], actual, cont);
     })
