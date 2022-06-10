@@ -1,6 +1,6 @@
 /*Asignamos nombre a nuestro Almacenamiento Cache*/
 
-const CACHE_NAME = 'portfolio-v11';
+const CACHE_NAME = 'portfolio-v962022';
 const urlsToCache = [
     /*'./',
     './index.html',*/
