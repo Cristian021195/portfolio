@@ -99,7 +99,7 @@ export function renderMenu(){
             $darken_1.classList.remove('darken');
             $darken_2.classList.remove('darken');
             $darken_2.classList.add('d-none');
-            $footer.style.zIndex = 0;
+            $footer.style.zIndex = -1;
 
             $darken_1.classList.add('darken-hide');
             $darken_2.classList.add('darken-hide');

@@ -6,6 +6,7 @@ export function proyectos(){
     const $descripcion = document.getElementById('_descripcion');
     const $imagenes = document.getElementById('_imagenes');
     const $link = document.getElementById('_link');
+    const $repo = document.getElementById('repo');
     const $inner = document.getElementById('_inner');
     const $contador = document.getElementById('contador');
     let inicio = 0;
@@ -27,7 +28,8 @@ export function proyectos(){
                 './public/img/horabondi_horario.jpg',
                 './public/img/horabondi_precio.jpg',
             ],
-            link:'https://horabondis.000webhostapp.com'
+            link:'https://horabondis.000webhostapp.com',
+            repo: 'https://github.com/Cristian021195/horabondi'
         },
         {
             titulo:'Panerita',
@@ -50,7 +52,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/panerita_detalle.png',
                 './public/img/panerita_comprobante.png',
             ],
-                link:'https://panerita.000webhostapp.com/panerita/'
+            link:'https://panerita.000webhostapp.com/panerita/',
+            repo: 'https://github.com/Cristian021195/panerita'
         },
         {
             titulo:'Notas',
@@ -63,7 +66,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/notas_inicio.jpg',
                 './public/img/notas_tabla.jpg'
             ],
-                link:'https://cristian021195.github.io/notas/'
+                link:'https://cristian021195.github.io/notas/',
+                repo: 'https://github.com/Cristian021195/notas'
         },
         {
             titulo:'Climap',
@@ -76,7 +80,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/climap_clima.jpg',
                 './public/img/climap_mapa.jpg'
             ],
-                link:'https://climap-6e45e.web.app/'
+                link:'https://climap-6e45e.web.app/',
+                repo: 'https://github.com/Cristian021195/climap'
         },
         {
             titulo:'Escritos',
@@ -90,7 +95,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/escritos_escritos.jpg',
                 './public/img/escritos_configuracion.jpg'
             ],
-                link:'https://escritos-f9d8d.web.app/'
+                link:'https://escritos-f9d8d.web.app/',
+                repo: 'https://github.com/Cristian021195/mis-escritos-front'
         },
         {
             titulo:'Akins',
@@ -106,7 +112,8 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
                 './public/img/akins2.jpg',
                 './public/img/akins3.jpg'
             ],
-            link:'https://cristian021195.github.io/Akins/'
+            link:'https://cristian021195.github.io/Akins/',
+            repo: 'https://github.com/Cristian021195/Akins'
         }
     ]
 
@@ -152,6 +159,7 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
         $titulo.textContent = _proyecto.titulo;
         $descripcion.innerHTML = _proyecto.descripcion;
         $link.setAttribute('href', _proyecto.link);
+        $repo.setAttribute('href', _proyecto.repo);
         $contador.innerHTML = `<span class="notranslate">${actual} / ${cont}</span>`;
 
         _proyecto.img.forEach(src => {

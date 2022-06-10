@@ -179,6 +179,10 @@ header{
 
 .verde:hover { background-color: rgb(135, 197, 155); }
 
+/*.verde { background-color: rgb(101, 178, 126); }
+
+.verde:hover { background-color: rgb(135, 197, 155); }*/
+
 footer{
     position: relative;
 }
