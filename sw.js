@@ -1,9 +1,9 @@
 /*Asignamos nombre a nuestro Almacenamiento Cache*/
 
-const CACHE_NAME = 'portfolio-v14072022';
+const CACHE_NAME = 'portfolio-v15072022';
 const urlsToCache = [
-    /*'./',
-    './index.html',*/
+    './',
+    './index.html',
     './public/css/style.css',
     './public/js/index.js',
     './public/js/helpers/conocimientos.js',
@@ -30,10 +30,10 @@ const urlsToCache = [
     './public/img/notas_inicio.jpg',
     './public/img/notas_splash.jpg',
     './public/img/notas_tabla.jpg',
-    './public/img/panerita_comprobante.png',
-    './public/img/panerita_detalle.png',
-    './public/img/panerita_login.png',
-    './public/img/panerita_main.png',
+    './public/img/panerita_comprobante.jpg',
+    './public/img/panerita_detalle.jpg',
+    './public/img/panerita_login.jpg',
+    './public/img/panerita_main.jpg',
     './public/img/escritos_splash.jpg',
     './public/img/escritos_inicio.jpg',
     './public/img/escritos_escritos.jpg',

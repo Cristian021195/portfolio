@@ -47,10 +47,12 @@ Construido en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.`,
             </ul>
             <p>Esta aplicación esta construida en HTML, CSS, JS, Bootstrap 5 y PHP Mysql</p>`,
             img:[
-                './public/img/panerita_login.png',
-                './public/img/panerita_main.png',
-                './public/img/panerita_detalle.png',
-                './public/img/panerita_comprobante.png',
+                //'./public/img/panerita_splash.jpg',
+                //'./public/img/panerita_mobile.jpg',
+                './public/img/panerita_login.jpg',
+                './public/img/panerita_main.jpg',
+                './public/img/panerita_detalle.jpg',
+                './public/img/panerita_comprobante.jpg',
             ],
             link:'https://panerita.000webhostapp.com/panerita/',
             repo: 'https://github.com/Cristian021195/panerita'
