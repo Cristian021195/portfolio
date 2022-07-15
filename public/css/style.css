@@ -149,7 +149,7 @@ body::-webkit-scrollbar-thumb{
 
 header{
     /*background-color: rgba(0, 0, 0, 0.801);*/
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     -webkit-filter: blur(0.3px);
             filter: blur(0.3px);
     border-radius: 2em;
@@ -648,6 +648,12 @@ section p, ._proyectos{
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width:600px) {
+    .boton{
+        margin-bottom: 0.5em;
+    }
+    .small-w100{
+        width: 100%;
+    }
     #menu{
         width: 65%;
         font-size: 1.4em;
