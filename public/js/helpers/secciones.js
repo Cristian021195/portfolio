@@ -43,7 +43,7 @@ export function secciones(){
         }
         else if(top > extras.offsetTop - 100 && top < proyectos.offsetTop - 100){
             switchToTrue(3, spy_switch);
-            $theme_color.setAttribute('content', colores[4]);
+            $theme_color.setAttribute('content', colores[3]);
             proyectos.firstElementChild.classList.add('fadeUp');
         }
         else if(top > proyectos.offsetTop - 100 && top < contacto.offsetTop - 100){
