@@ -36,43 +36,37 @@
     <meta property="og:image" content="https://cristian021195.github.io/portfolio/public/img/fotos/perfil.jpg">      
 
     <!-- LIBRERIAS Y RECURSOS -->
-    <link rel="stylesheet" href="./public/libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-grid.css">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/colors.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri&family=Raleway:wght@200&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <!-- JSDelivr -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="./public/libraries/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://kit.fontawesome.com/ebf30f2c4d.js" crossorigin="anonymous"></script>
     <script src="./public/js/index.js" type="module"></script>
 </head>
 <body id="darken1" class="darken side-menu thumb-scroll">
     <div id="darken2" class="darken side-menu"></div>
     <div id="darken3" class="darken3"></div>
-    <div id="loader" class="screen-loader d-flex justify-content-center align-content-center align-items-center">
+    <!--<div id="loader" class="screen-loader d-flex justify-content-center align-content-center align-items-center">
       <img src="./public/img/metas/dev-icon.svg" class="pulse border border-5 border-light"/>
-    </div>
+    </div>-->
 
     <button class="bubble-menu d-md-none" type="button" id="btn-menu"><i class="fas fa-bars"></i></button>
     <div id="menu" class="d-none"></div>
-    <header class="container mt-3 fixed-top d-none d-md-block">
-      <ul class="navbar-line list-inline"></ul>
+    <header class="container mt-3 fixed-top d-none d-md-block z-i-1">
+      <ul class="navbar-line"></ul>
     </header>
       <main id="main">
-          <section class="text-center introduccion" id="inicio">
-                <div class="row w-100">
-                  <div class="col-md-3 col-sm-4 col-6 mx-auto offset-md-1 p-4 mb-2">
-                    <lottie-player src="./public/img/lottie/dev-icon3.json" class="circle-white" background="transparent" speed="0.7" autoplay></lottie-player>
-                  </div>
-                  <div class="col-md-7 offset-md-1 col-12 p-4 d-flex align-items-center">
-                      <h1 id="saludo" class="saludo" alt="Hola, soy Cristian Gramajo, Desarrollador Web JR."></h1>
-                  </div>
-                </div>
+          <section class="introduccion row" id="inicio">
+            <div class="col-md-7 col-12 p-4">
+                <h1 id="saludo" class="saludo" alt="Hola, soy Cristian Gramajo, Desarrollador Web JR."></h1>
+            </div>
           </section>
           <div class="custom-bg">
             <svg data-name="Layer 1" class="layer-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" preserveAspectRatio="none">
-              <path fill="#8bb7ff" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+              <path fill="#f5f5f5" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
             </svg>
           </div>
           <section class="p-4" id="referencias">
@@ -80,10 +74,9 @@
               <h1>Un poco sobre mí &nbsp;<i class="fas fa-user-tie"></i></h1>
               <div class="row d-flex justify-content-center">
                 <div class="col-sm-12 col-lg-5">
-                  <p>Actualmente Tengo 26 años. El desarrollo web es una de mis pasiones, y aun mi meta.<br><br>
-			            Realicé trabajos Freelance, enfocado en aplicaciones web de diseño moderno y funcionalidad aplicada con bases de datos y uso adecuado de backend. Siendo aplicaciones web para amigos con generación de comprobante, web públicas, y proyectos personales para uso general con notificaciones.<br><br>
-                  Me gusta enfocarme en el diseño responsive, la mayoría de mis proyectos están orientado al uso desde el smartphone (Recomiendo que los pruebes desde allí).<br>
-                    <a href="https://drive.google.com/file/d/1015jvgl-NPbd9a28bxtcFTW9pgySRatg/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-lg btn-dark mt-4 small-w100"><i class="fas fa-file-pdf"></i>&nbsp;<span class="notranslate" translate="no">Curriculum Vitae (Google Drive)</span></a>
+                  <p>Tengo 26 años y el Desarrollo Web es mi pasión.<br><br>
+			            He desarollado aplicaciones fullstack modernas, Me gusta enfocarme mucho en el diseño responsive para la mejor experiencia de usuario en cualquier dispositivo.<br>
+                    <a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-lg btn-dark mt-4 small-w100" style="background-color:var(--grey-9); color:whitesmoke"><i class="fas fa-file-pdf"></i>&nbsp;<span class="notranslate" translate="no">Curriculum Vitae</span></a>
 		              </p>
                 </div>
                 <div class="col-sm-12 col-lg-5 text-center"><p class="responsive-no-border"><img src="./public/img/fotos/foto1.jpg" width="400" id="foto-perfil" alt="Foto perfil" onerror="this.src = './public/img/metas/dev-icon.svg'" class="galery"></p></div>
@@ -95,30 +88,72 @@
               <path fill="#fd8991" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" id="modal-dialog">
-              <div class="modal-content" id="modal-content">
-                <div class="modal-body" id="exampleModalBody">
-                  <div class="d-flex justify-content-between"><h4 class="d-none d-sm-block">&nbsp;</h4><h4 class="modal-title text-center" id="exampleModalLabel"></h4><button type="button" class="btn" data-bs-dismiss="modal"><i class="fas fa-times-circle"></i></button></div>
-                  <div class="text-center">
-                    <img src="" alt="" width="20%">
-                  </div>
-                  <p></p>
-                  <div class="container col-lg-6 col-md-8 col-sm-12 modal-conocimiento">
-                    <div>
-                      <ul></ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <span id="ejemplo" data-bs-toggle="modal" data-bs-target="#exampleModal"></span>
           <section class="p-4" id="conocimientos">
             <div>
               <h1>Conocimientos &nbsp;<i class="fas fa-layer-group"></i></h1>
-              <div id="listado_conocimientos">
-              </div>
+                <div id="listado_conocimientos">
+                  <div class="tarjeta" title="HTML5"><img src="https://cristian021195.github.io/portfolio/public/img/metas/HTML5.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>HTML5</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="CSS3"><img src="https://cristian021195.github.io/portfolio/public/img/metas/CSS3.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>CSS3</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="JavaScript (ES5 / ES6)"><img
+                      src="https://cristian021195.github.io/portfolio/public/img/metas/logo-javascript.svg" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <div>
+                      <h4>JavaScript (ES5 / ES6)</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="Bootstrap"><img src="https://cristian021195.github.io/portfolio/public/img/metas/bootstrap-5-1.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>Bootstrap</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="Materialize"><img src="https://cristian021195.github.io/portfolio/public/img/metas/materialize.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>Materialize</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="JQuery"><img src="https://cristian021195.github.io/portfolio/public/img/metas/jquery-1.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>JQuery</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="React"><img src="https://cristian021195.github.io/portfolio/public/img/metas/react-black.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>React</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="Php 7"><img src="https://cristian021195.github.io/portfolio/public/img/metas/php-1.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>Php 7</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="Nodejs"><img src="https://cristian021195.github.io/portfolio/public/img/metas/nodejs.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>Nodejs</h4>
+                    </div>
+                  </div>
+                  <div class="tarjeta" title="MySql"><img src="https://cristian021195.github.io/portfolio/public/img/metas/mysql-2.svg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                      <h4>MySql</h4>
+                    </div>
+                  </div>
+                  </div>
             </div>
           </section>
           <div class="custom-bg-5">
@@ -130,29 +165,12 @@
             <div>
               <h1>Extras &nbsp;<i class="fas fa-tools"></i></h1>
               <div id="listado_herramientas" class="d-flex justify-content-center flex-wrap">
-              </div>
-            </div>
-          </section>
-          <div class="custom-bg-2">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" preserveAspectRatio="none">
-              <path fill="#fff799" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <section class="p-4" id="metas">
-            <div>
-              <h1>Metas &nbsp;<i class="fas fa-flag-checkered"></i></h1>
-              <div class="d-flex justify-content-center">
-                <div class="col-md-12 col-lg-10">
-                <p>Me gusta mucho JavaScript, la idea usarlo en backend y frontend me parece espectacular.<br>
-		En el futuro me gustaría dedicarme al desarrollo móvil (React Native, Native Script, o Flutter). Ya sea con alguna empresa o socio, mis metas son estas. Mientras tanto cumpliré y aprenderé lo necesario para mantenerme en el desarrollo en general.
-		</p>
-                </div>
-              </div>
+                <div class="tarjeta" title="Paquete Office"><img src="https://cristian021195.github.io/portfolio/public/img/metas/office.svg"><div><h4>Paquete Office</h4><p class="fs-6">Paquete Office, (Word, Excel, Powerpoint)</p></div></div><div class="tarjeta" title="Postman"><img src="https://cristian021195.github.io/portfolio/public/img/metas/postman.svg"><div><h4>Postman</h4><p class="fs-6">Testing de Rest API's.</p></div></div><div class="tarjeta" title="Adobe XD"><img src="https://cristian021195.github.io/portfolio/public/img/metas/adobe-xd.svg"><div><h4>Adobe XD</h4><p class="fs-6">Diseño de logos, e interfaces.</p></div></div><div class="tarjeta" title="Figma"><img src="https://cristian021195.github.io/portfolio/public/img/metas/figma.svg"><div><h4>Figma</h4><p class="fs-6">Diseño de logos, e interfaces.</p></div></div><div class="tarjeta" title="Idiomas"><img src="https://cristian021195.github.io/portfolio/public/img/metas/languaje.svg"><div><h4>Idiomas</h4><p class="fs-6">Inglés intermedio para lectura y escritura</p></div></div></div>
             </div>
           </section>
           <div class="custom-bg-3">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" preserveAspectRatio="none">
-              <path fill="#F7B392" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+              <path fill="#fff799" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
           </div>
           <section class="p-4" id="proyectos">
@@ -165,9 +183,9 @@
                   </p>
                   <div class="_proyectos">
                     <div class="d-flex justify-content-around">
-                      <button class="boton piel" id="anterior">Anterior</button>
+                      <button class="btn" style="background-color: var(--grey-9);color:whitesmoke" id="anterior">Anterior</button>
                       <span id="contador"></span>
-                      <button class="boton piel" id="siguiente">Siguiente</button>
+                      <button class="btn" style="background-color: var(--grey-9);color:whitesmoke" id="siguiente">Siguiente</button>
                     </div>
                     <div id="_inner" class="mt-4">
                       <h2 id="_titulo" class="text-center"></h2>
@@ -190,37 +208,30 @@
             <path fill="#AFDAE7" d="M1200 0L0 60 0 0 1200 0 1200 120z" class="shape-fill"></path>
         </svg>
       </div>
-      <footer class="container-fluid bg-dark pt-4" id="contacto">
+      <footer class="container-fluid pt-4" id="contacto">
           <h1 class="text-center text-light" id="contacto">Contacto &nbsp;<i class="fas fa-mail-bulk"></i></h1>
-          <p class="text-light text-center">Si necesitas ayuda contáctame con alguna de estas redes sociales. &nbsp; <button class="btn btn-sm salmon text-light text" id="compartir"><strong>Comparte <i class="fas fa-share-alt"></i></strong></button> &nbsp;este portfolio a quien necesite.</p>
-          <div class="row">
-            <ul>
-              <li><h4><a href="#" id="mail"><i class="fas fa-envelope-square"></i>&nbsp; Mándame un mail</a></h4></li>
-              <li><h4><a href="https://github.com/Cristian021195" target="_blank" rel="noopener"><i class="fab fa-github-square"></i>&nbsp;Encuéntrame en Github</a></h4></li>
-              <li><h4><a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" ><i class="fas fa-file-pdf"></i>&nbsp; <span class="notranslate" translate="no">Curriculum Vitae (Google Drive) </span></a></h4></li>
-              <li><h4><a href="https://www.linkedin.com/in/cristian-ismael-gramajo-760534165/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>&nbsp;Encuéntrame en LinkedIn</a></h4></li>
-              <li>
-                <h4>
-                  <a href="https://api.whatsapp.com/send?phone=+543865332311" target="_blank" rel="noopener"><i class="fab fa-whatsapp-square"></i>&nbsp; Escríbeme por Whatsapp</a>
-                </h4>
+          <p class="text-light text-center">Si necesitas ayuda contáctame con alguna de estas redes sociales. &nbsp; <button class="btn" style="background-color: var(--red-4);color:whitesmoke" id="compartir"><strong>Comparte <i class="fas fa-share-alt"></i></strong></button> &nbsp;este portfolio a quien necesite.</p>
+            <ul class="d-flex justify-content-center">
+              <li class="m-3 fs2">
+                <a href="#" id="mail"><i class="fas fa-envelope-square"></i></a>
               </li>
-	      <li>
-                <h4>
-                  <a href="https://www.instagram.com/cristiangramajo015" target="_blank"><i class="fab fa-instagram-square" aria-hidden="true"></i>&nbsp; Encuéntrame en Instagram</a>
-                </h4>
+              <li class="m-3 fs2">
+                <a href="https://github.com/Cristian021195" target="_blank" rel="noopener"><i class="fab fa-github-square"></i></a>
               </li>
-              <li>
-                <h4>
-                  <a href="#inicio" class="text-warning"><i class="fas fa-home"></i>&nbsp; Volver</a>
-                </h4>
+              <li class="m-3 fs2">
+                <a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" ><i class="fas fa-file-pdf"></i>&nbsp; <span class="notranslate" translate="no"></span></a>
+              </li>
+              <li class="m-3 fs2">
+                <a href="https://www.linkedin.com/in/cristian-ismael-gramajo-760534165/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="m-3 fs2">
+                <a href="#inicio" class="text-warning" style="color:var(--yellow-8)"><i class="fas fa-home"></i></a>
               </li>
             </ul>
-          </div>
       </footer>
       <div id="google_translate_element"></div>
       <script type="text/javascript">
 	      const $mail = document.getElementById('mail');
-        const $lottie_icon = document.getElementById('lottie-icon');
 	      $mail.addEventListener('click', (e)=>{
 	      	e.preventDefault();
 	      	navigator.clipboard.writeText('cristiangramajo015@gmail.com').then(res=>alert('¡Mail copiado!'))
@@ -228,7 +239,7 @@
         document.cookie = 'googtrans=/es/es;';
         function googleTranslateElementInit() {
           new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
-          let $h4 = document.createElement('h5'); $h4.innerHTML = 'Cambiar Idioma <i class="fas fa-language"></i>'; $h4.style.color = 'white';
+          let $h4 = document.createElement('P'); $h4.innerHTML = 'Cambiar Idioma <i class="fas fa-language"></i>'; $h4.style.color = 'white';
           const $gt_bg = document.getElementById('google_translate_element').firstElementChild; $gt_bg.classList.add('idioma');
           const $gt = document.getElementById('google_translate_element').firstElementChild.firstElementChild;
           $gt.classList.add('gt_select');

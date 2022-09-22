@@ -42,7 +42,7 @@ a:hover{
 /*TRADUCTOR*/
 #google_translate_element{width:300px;float:right;text-align:right;display:block}
 .goog-te-banner-frame.skiptranslate { display: none !important;} 
-body { top: 0px !important; }
+body { top: 0px !important; overflow-x: hidden;}
 #goog-gt-tt{display: none !important; top: 0px !important; } 
 .goog-tooltip skiptranslate{display: none !important; top: 0px !important; } 
 .activity-root { display: hide !important;} 
@@ -179,9 +179,12 @@ header{
 
 .verde:hover { background-color: rgb(135, 197, 155); }
 
-/*.verde { background-color: rgb(101, 178, 126); }
-
-.verde:hover { background-color: rgb(135, 197, 155); }*/
+.text-light{
+    color: whitesmoke;
+}
+.text-dark{
+    color: rgb(37, 37, 37);
+}
 
 footer{
     position: relative;
@@ -201,7 +204,23 @@ footer a{
 .navbar-line{
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
+}
+.navbar-line li{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.navbar-line li a{
+    padding: 0.5em 1em 0.5em 1em;
+}
+.nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+}
+.nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
 }
 .side-menu{
     position: absolute;
@@ -242,7 +261,6 @@ footer a{
 #menu ul li{
     margin-bottom: 0.2em;
     transform: rotateX(-20deg) rotateY(0deg);
-    /*text-transform: capitalize;*/
     font-family: 'Bebas Neue';
 }
 .bubble-menu{
@@ -284,12 +302,6 @@ footer a{
     list-style: disc;
     list-style-position: inside;
 }
-/*#referencias{
-    clip-path: polygon(0% 2%, 100% 0%, 100% 101%, 0% 101%);
-}
-#referencias h1{
-    margin-top: 1em;
-}*/
 #referencias img{
     box-shadow: 0.5em 0.5em 0.5em rgb(0 0 0 / 40%);
 }
@@ -303,19 +315,45 @@ footer a{
     transition: all 0.4s;
 }
 .tarjeta:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.4s;
-    cursor: pointer;
 }
 .tarjeta img{
     width: 10em;
 }
 .introduccion{    
     position: relative;
-    -webkit-clip-path:polygon(0 0, 95% 0%, 100% 101%, 5% 101%);
-    clip-path: polygon(0 0, 95% 0%, 100% 101%, 5% 101%);
+    /*-webkit-clip-path:polygon(0 0, 95% 0%, 100% 101%, 5% 101%);
+    clip-path: polygon(0 0, 95% 0%, 100% 101%, 5% 101%);*/
+    /*-webkit-clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+    clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);*/
+    -webkit-animation: introMove 10s infinite;
+            animation: introMove 10s infinite;
     z-index: -3;
 }
+@keyframes introMove{
+    0%{
+        -webkit-clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+        clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+    }
+    25%{
+        -webkit-clip-path: polygon(5% 8%, 91% 15%, 95% 89%, 8% 89%);
+        clip-path: polygon(5% 8%, 91% 15%, 95% 89%, 8% 89%);
+    }
+    50%{
+        -webkit-clip-path: polygon(16% 26%, 91% 15%, 95% 89%, 6% 75%);
+        clip-path: polygon(16% 26%, 91% 15%, 95% 89%, 6% 75%);
+    }
+    75%{
+        -webkit-clip-path: polygon(19% 7%, 91% 15%, 93% 72%, 8% 93%);
+        clip-path: polygon(19% 7%, 91% 15%, 93% 72%, 8% 93%);
+    }
+    100%{
+        -webkit-clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+        clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+    }
+}
+
 .layer-1{
     vertical-align: top;
 }
@@ -350,6 +388,9 @@ footer p{
 h2{
     font-weight: bold;
     font-family: 'Raleway';
+}
+header{
+    font-family: 'Hind Siliguri';
 }
 footer ul li{
     display: flex;
@@ -393,8 +434,8 @@ section p, ._proyectos{
 .saludo::before{
     content: '';
     color: rgba(0, 0, 0, 0);
-    -webkit-animation: saludoAnimation 8s infinite;
-            animation: saludoAnimation 8s infinite;
+    -webkit-animation: saludoAnimation 15s infinite;
+            animation: saludoAnimation 15s infinite;
 }
 .fadeUp{
     /*animation: fadeUpAnimation 0.7s linear;*/
@@ -652,6 +693,11 @@ section p, ._proyectos{
     }
     #menu ul{
         padding-left: 0.4em;
+        width: 100%;
+        padding-left: 1em;
+    }
+    #menu ul li{
+        margin-bottom: 1em;
     }
     .saludo{
         height: 5rem;

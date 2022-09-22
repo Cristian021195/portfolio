@@ -1,15 +1,9 @@
 import {renderMenu} from './helpers/menu.js';
 import {secciones} from './helpers/secciones.js';
-import {loader} from './helpers/loader.js';
 import {proyectos} from './helpers/proyectos.js';
-import {conocimientos} from './helpers/conocimientos.js';
+//import {conocimientos} from './helpers/conocimientos.js';
 import {galery} from './helpers/galery.js';
-import { herramientas } from './helpers/herramientas.js';
-/*window.onload = () =>{
-    renderMenu();
-    proyectos();
-    secciones();
-}*/
+//import { herramientas } from './helpers/herramientas.js';
 
 const $loader = document.getElementById('loader');
 const $main = document.getElementById('main');
@@ -19,20 +13,20 @@ const $bubble_menu = document.getElementById('btn-menu');
 const $custombg6 = document.querySelector('.custom-bg-6');
 let swRegistration = null;
 
-$main.style.display = 'none';
-$header.style.display = 'none';
-$footer.style.display = 'none';
-$bubble_menu.style.display = 'none';
-$custombg6.style.display = 'none';
-scrollTo(0,0)
+//$main.style.display = 'none';
+//$header.style.display = 'none';
+//$footer.style.display = 'none';
+//$bubble_menu.style.display = 'none';
+//$custombg6.style.display = 'none';
+//scrollTo(0,0)
 
 document.addEventListener('DOMContentLoaded', ()=>{
     //document.addEventListener('contextmenu', event => event.preventDefault());
     renderMenu();
     proyectos();
     secciones();
-    conocimientos();
-    herramientas();
+    //conocimientos();
+    //herramientas();
     galery();
 
     const $compartir = document.getElementById('compartir');
@@ -53,29 +47,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
             console.log('Error al compartir');
         }                
     }
-    if('serviceWorker' in navigator){
-        navigator.serviceWorker.register('https://cristian021195.github.io/portfolio/sw.js')
-        .then((swReg)=>{
-            swRegistration = swReg;
-            console.log('¡Service worker registrado!')
-            swRegistration.pushManager.getSubscription()
-            .then((subscription)=> {
-                console.log('User IS subscribed.');
-            });
-        }).catch(e=>{console.log(e)
-        });
-    }else{
-        console.error('imposible registrar service worker')
-    }
-
 })
 
 window.addEventListener('load', ()=>{
-    $loader.innerHTML = '';
-    $loader.classList.remove('screen-loader');
-    $main.style.display = 'block';
-    $header.style.display = 'block';
-    $footer.style.display = 'block';
-    $bubble_menu.style.display = 'block';
-    $custombg6.style.display = 'block';
+    //$loader.innerHTML = '';
+    //$loader.classList.remove('screen-loader');
+    //$main.style.display = 'block';
+    //$header.style.display = 'block';
+    //$footer.style.display = 'block';
+    //$bubble_menu.style.display = 'block';
+    //$custombg6.style.display = 'block';
 })

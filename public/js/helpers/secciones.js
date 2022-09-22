@@ -6,12 +6,11 @@ export function secciones(){
     let spy_switch = true;
     let ventana = window.innerHeight;
 
-    const [introduccion, referencias, conocimientos, extras, metas, proyectos, contacto] = [
+    const [introduccion, referencias, conocimientos, extras, proyectos, contacto] = [
         document.getElementById('inicio'),
         document.getElementById('referencias'),
         document.getElementById('conocimientos'),
         document.getElementById('extras'),
-        document.getElementById('metas'),
         document.getElementById('proyectos'),
         document.getElementById('contacto'),
     ];
@@ -21,7 +20,7 @@ export function secciones(){
     referencias.style.backgroundColor = colores[1];
     conocimientos.style.backgroundColor = colores[2];
     extras.style.backgroundColor = colores[3];
-    metas.style.backgroundColor = colores[4];
+    //metas.style.backgroundColor = colores[4];
     proyectos.style.backgroundColor = colores[5];
     contacto.style.backgroundColor = colores[6];
 
@@ -42,20 +41,16 @@ export function secciones(){
             $theme_color.setAttribute('content', colores[2]);
             extras.firstElementChild.classList.add('fadeUp');
         }
-        else if(top > extras.offsetTop - 100 && top < metas.offsetTop - 100){
+        else if(top > extras.offsetTop - 100 && top < proyectos.offsetTop - 100){
             switchToTrue(3, spy_switch);
-            $theme_color.setAttribute('content', colores[3]);
-            metas.firstElementChild.classList.add('fadeUp');
-        }else if(top > metas.offsetTop - 100 && top < proyectos.offsetTop - 100){
-            switchToFalse(4);
             $theme_color.setAttribute('content', colores[4]);
             proyectos.firstElementChild.classList.add('fadeUp');
         }
         else if(top > proyectos.offsetTop - 100 && top < contacto.offsetTop - 100){
-            switchToTrue(5, spy_switch);
+            switchToFalse(4);
             $theme_color.setAttribute('content', colores[5]);
             contacto.firstElementChild.classList.add('fadeUp');
-        }        
+        }
     });
 
     function switchToFalse(val){

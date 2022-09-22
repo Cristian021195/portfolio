@@ -1,18 +1,14 @@
-1 - soft ui design - bootstrap 5 fixed navbar -> usar como ejemplo, y las cards con hover.
-	( https://demos.creative-tim.com/marketplace/soft-ui-design-system-pro/pages/coworking.html ) - ICONOS https://css.gg/app?s=phone
-2 - implementar botones propios, estilos glasy y solidos.
-3 - div en poligonos con sombras o degrades como background
-4 - efecto scroll
-5 - remover efecto focus en botones. mejorar efecto hover: USO DE DIFERENTES CURSORES
-6 - Realizar una unica linea de diseño, no muchos cambios, quizas un modo noche, pero nada mas.
-7 - si todo el landing es vertical seguimos el punto 6, sino realizamos efectos de transicion derecha, izquiera con zoom y
-	con perpectiva suave, mientras hace el efecto, el div poligono modifica sus valores. (obvio de manera suave)
-8 - Foto portada con circular medio, o con borders si la ponemos a la izquierda o derecha. bordes blancos y con sombras suaves
-9 - No olvidar metadatas, o poner traduccion de la pagina, BUENA ORTOGRAFIA y mapa de caracteres correcto. contacto sera sección
-10 - si vamos a cargarlo de fuentes, imagenes y otros servicios, es RECOMENDABLE hacer un loader al inicio del portfolio
-11 - Hacerla PWA no olvidar, barra de color.
-12 - Resumen, idea glasy, con fuentes contrastadas, orden de tamaños segun elementos pero no muy variado.
+1 - Cambiar botones siguiente anterior com boton portfolio
+2 - remover (google drive) de botones y links
+3 - aún con acento
+4 - intro mas corta, sin indicar uso desde smartphone, amigos,etc, se sabe de antemano que sabes responsive asi que no ponerlo.
+5 - quitar metas
+6 - botones proyectos ant siguiente
+7 - reducir opciones de contacto, remover drive o igualarlos y texto de introduccion mas corto, quitar instagram, quizas solo dejar iconos, eliminar boostrap, solo boostrap grid
+8 - revisar colores.
+9 - exceso de accesibilidad
 
+CV - ORDEN DE EXPERIENCIA INVERTIDO, ARRIBA LO ULTIMO
 
 Estructura: secciones
 	-> Introduccion con nombre y Foto + Pequeña descripcion

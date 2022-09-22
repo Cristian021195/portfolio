@@ -33,11 +33,6 @@ export function renderMenu(){
             links: []
         },
         {
-            item: 'metas',
-            icon:'flag-checkered',
-            links: []
-        },
-        {
             item: 'proyectos',
             icon:'suitcase',
             links: []
