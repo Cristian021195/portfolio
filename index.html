@@ -1,256 +1,238 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="height: 100vh;scroll-behavior: smooth;">
 <head>
-    <!-- SEO Y CONFIGURACIÓN BASICA -->
-    <!-- 
-    <meta http-equiv="cache-control" content="no-cache"/>
-    <meta http-equiv="expires" content="tiempo de expiración en segundos"/> 
-    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Portfolio personal de Cristian Ismael Gramajo. Desarrollador Web."/>
-    <meta name="keywords" content="primer trabajo, desarrollador, programación, frontend, backend, junior, junior level. Cristian"/>
-    <meta name="author" content="Cristian Ismael Gramajo" />
-    <meta name="copyright" content="Cristian Ismael Gramajo - Argentina - desarrollador" />
-    <meta name="robots" content="follow"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Cristian Ismael Gramajo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
 
-    <!-- PWA -->
-    <meta name="theme-color" id="theme-color" content="#8bb7ff">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true"><!--Optimizacion Movil-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" href="./public/img/metas/dev-icon.svg" sizes="any" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./public/img/metas/dev-icon.svg" sizes="any" type="image/svg+xml">
-    <link rel="apple-touch-startup-image" href="./public/img/metas/dev-icon.svg" sizes="any" type="image/svg+xml">
-    <link rel="manifest" href="./manifest.json">
-
-    <!-- OG TYPES-->
-    <meta property="og:title" content="Cristian Ismael Gramajo">
-    <meta property="og:site_name" content="Cristian Ismael Gramajo">
-    <meta property="og:url" content="https://cristian021195.github.io/portfolio/">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://cristian021195.github.io/portfolio/public/img/fotos/perfil.jpg">      
-
-    <!-- LIBRERIAS Y RECURSOS -->
-    <link rel="stylesheet" href="./public/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/colors.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri&family=Raleway:wght@200&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
-    <!-- JSDelivr -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/ebf30f2c4d.js" crossorigin="anonymous"></script>
-    <script src="./public/js/index.js" type="module"></script>
-</head>
-<body id="darken1" class="darken side-menu thumb-scroll">
-    <div id="darken2" class="darken side-menu"></div>
-    <div id="darken3" class="darken3"></div>
-    <!--<div id="loader" class="screen-loader d-flex justify-content-center align-content-center align-items-center">
-      <img src="./public/img/metas/dev-icon.svg" class="pulse border border-5 border-light"/>
-    </div>-->
-
-    <button class="bubble-menu d-md-none" type="button" id="btn-menu"><i class="fas fa-bars"></i></button>
-    <div id="menu" class="d-none"></div>
-    <header class="container mt-3 fixed-top d-none d-md-block z-i-1">
-      <ul class="navbar-line"></ul>
-    </header>
-      <main id="main">
-          <section class="introduccion row" id="inicio">
-            <div class="col-md-7 col-12 p-4">
-                <h1 id="saludo" class="saludo" alt="Hola, soy Cristian Gramajo, Desarrollador Web JR."></h1>
-            </div>
-          </section>
-          <div class="custom-bg">
-            <svg data-name="Layer 1" class="layer-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" preserveAspectRatio="none">
-              <path fill="#f5f5f5" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <section class="p-4" id="referencias">
-            <div>
-              <h1>Un poco sobre mí &nbsp;<i class="fas fa-user-tie"></i></h1>
-              <div class="row d-flex justify-content-center">
-                <div class="col-sm-12 col-lg-5">
-                  <p>Tengo 26 años y el Desarrollo Web es mi pasión.<br><br>
-			            He desarollado aplicaciones fullstack modernas, Me gusta enfocarme mucho en el diseño responsive para la mejor experiencia de usuario en cualquier dispositivo.<br>
-                    <a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-lg btn-dark mt-4 small-w100" style="background-color:var(--grey-9); color:whitesmoke"><i class="fas fa-file-pdf"></i>&nbsp;<span class="notranslate" translate="no">Curriculum Vitae</span></a>
-		              </p>
-                </div>
-                <div class="col-sm-12 col-lg-5 text-center"><p class="responsive-no-border"><img src="./public/img/fotos/foto1.jpg" width="400" id="foto-perfil" alt="Foto perfil" onerror="this.src = './public/img/metas/dev-icon.svg'" class="galery"></p></div>
-              </div>
-            </div>
-          </section>
-          <div class="custom-bg-1">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" preserveAspectRatio="none">
-              <path fill="#fd8991" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <section class="p-4" id="conocimientos">
-            <div>
-              <h1>Conocimientos &nbsp;<i class="fas fa-layer-group"></i></h1>
-                <div id="listado_conocimientos">
-                  <div class="tarjeta" title="HTML5"><img src="https://cristian021195.github.io/portfolio/public/img/metas/HTML5.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>HTML5</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="CSS3"><img src="https://cristian021195.github.io/portfolio/public/img/metas/CSS3.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>CSS3</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="JavaScript (ES5 / ES6)"><img
-                      src="https://cristian021195.github.io/portfolio/public/img/metas/logo-javascript.svg" data-bs-toggle="modal"
-                      data-bs-target="#exampleModal">
-                    <div>
-                      <h4>JavaScript (ES5 / ES6)</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="Bootstrap"><img src="https://cristian021195.github.io/portfolio/public/img/metas/bootstrap-5-1.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>Bootstrap</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="Materialize"><img src="https://cristian021195.github.io/portfolio/public/img/metas/materialize.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>Materialize</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="JQuery"><img src="https://cristian021195.github.io/portfolio/public/img/metas/jquery-1.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>JQuery</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="React"><img src="https://cristian021195.github.io/portfolio/public/img/metas/react-black.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>React</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="Php 7"><img src="https://cristian021195.github.io/portfolio/public/img/metas/php-1.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>Php 7</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="Nodejs"><img src="https://cristian021195.github.io/portfolio/public/img/metas/nodejs.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>Nodejs</h4>
-                    </div>
-                  </div>
-                  <div class="tarjeta" title="MySql"><img src="https://cristian021195.github.io/portfolio/public/img/metas/mysql-2.svg"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div>
-                      <h4>MySql</h4>
-                    </div>
-                  </div>
-                  </div>
-            </div>
-          </section>
-          <div class="custom-bg-5">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" preserveAspectRatio="none">
-              <path fill="#e5baff" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <section class="p-4" id="extras">
-            <div>
-              <h1>Extras &nbsp;<i class="fas fa-tools"></i></h1>
-              <div id="listado_herramientas" class="d-flex justify-content-center flex-wrap">
-                <div class="tarjeta" title="Paquete Office"><img src="https://cristian021195.github.io/portfolio/public/img/metas/office.svg"><div><h4>Paquete Office</h4><p class="fs-6">Paquete Office, (Word, Excel, Powerpoint)</p></div></div><div class="tarjeta" title="Postman"><img src="https://cristian021195.github.io/portfolio/public/img/metas/postman.svg"><div><h4>Postman</h4><p class="fs-6">Testing de Rest API's.</p></div></div><div class="tarjeta" title="Adobe XD"><img src="https://cristian021195.github.io/portfolio/public/img/metas/adobe-xd.svg"><div><h4>Adobe XD</h4><p class="fs-6">Diseño de logos, e interfaces.</p></div></div><div class="tarjeta" title="Figma"><img src="https://cristian021195.github.io/portfolio/public/img/metas/figma.svg"><div><h4>Figma</h4><p class="fs-6">Diseño de logos, e interfaces.</p></div></div><div class="tarjeta" title="Idiomas"><img src="https://cristian021195.github.io/portfolio/public/img/metas/languaje.svg"><div><h4>Idiomas</h4><p class="fs-6">Inglés intermedio para lectura y escritura</p></div></div></div>
-            </div>
-          </section>
-          <div class="custom-bg-3">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" preserveAspectRatio="none">
-              <path fill="#fff799" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <section class="p-4" id="proyectos">
-            <div>
-              <h1>Proyectos &nbsp;<i class="fas fa-suitcase"></i></h1>
-                <div class="d-flex justify-content-center">
-                  <div class="col-md-12 col-lg-10">
-                  <p>Aquí dejo mis proyectos, algunos son libres de probar, otros solo con descripción. <br>
-			Verán que ya tengo manejo con servidores apache en servicios de host compartido, como es el caso de Hostinger, 000webhost, Infinity Free, con manejo de Cpanel. Por otro lado, ya tengo una aplicación alojada con Google Cloud Service.
-                  </p>
-                  <div class="_proyectos">
-                    <div class="d-flex justify-content-around">
-                      <button class="btn" style="background-color: var(--grey-9);color:whitesmoke" id="anterior">Anterior</button>
-                      <span id="contador"></span>
-                      <button class="btn" style="background-color: var(--grey-9);color:whitesmoke" id="siguiente">Siguiente</button>
-                    </div>
-                    <div id="_inner" class="mt-4">
-                      <h2 id="_titulo" class="text-center"></h2>
-                      <div id="_descripcion" class="col-md-9 col-12 mx-auto"></div><br>
-                      <div class="d-flex justify-content-evenly mb-4 flex-wrap">
-                        <a href="" id="_link" target="_blank" class="btn" style="background-color: var(--grey-9); color:whitesmoke;">Probar</a>
-                        <a href="" id="repo" target="_blank"><i class="fab fa-github-square"></i>&nbsp;Ver Repositorio</a>
-                      </div>
-                      <div id="_imagenes" class="responsive-img"></div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <ul class="pagination d-flex justify-content-center" id="paginacion"></ul>
-            </div>
-          </section>
-      </main>
-      <div class="custom-bg-6">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-            <path fill="#AFDAE7" d="M1200 0L0 60 0 0 1200 0 1200 120z" class="shape-fill"></path>
-        </svg>
-      </div>
-      <footer class="container-fluid pt-4" id="contacto">
-          <h1 class="text-center text-light" id="contacto">Contacto &nbsp;<i class="fas fa-mail-bulk"></i></h1>
-          <p class="text-light text-center">Si necesitas ayuda contáctame con alguna de estas redes sociales. &nbsp; <button class="btn pt-1 pb-1" style="background-color: var(--red-4);color:whitesmoke" id="compartir"><strong>Comparte <i class="fas fa-share-alt"></i></strong></button> &nbsp;este portfolio a quien necesite.</p>
-            <ul class="d-flex justify-content-center">
-              <li class="m-3 fs2">
-                <a href="#" id="mail"><i class="fas fa-envelope-square"></i></a>
-              </li>
-              <li class="m-3 fs2">
-                <a href="https://github.com/Cristian021195" target="_blank" rel="noopener"><i class="fab fa-github-square"></i></a>
-              </li>
-              <li class="m-3 fs2">
-                <a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" ><i class="fas fa-file-pdf"></i>&nbsp; <span class="notranslate" translate="no"></span></a>
-              </li>
-              <li class="m-3 fs2">
-                <a href="https://www.linkedin.com/in/cristian-ismael-gramajo-760534165/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="m-3 fs2">
-                <a href="#inicio" class="text-warning" style="color:var(--yellow-8)"><i class="fas fa-home"></i></a>
-              </li>
-            </ul>
-      </footer>
-      <div id="google_translate_element"></div>
-      <script type="text/javascript">
-	      const $mail = document.getElementById('mail');
-	      $mail.addEventListener('click', (e)=>{
-	      	e.preventDefault();
-	      	navigator.clipboard.writeText('cristiangramajo015@gmail.com').then(res=>alert('¡Mail copiado!'))
-	      })
-        document.cookie = 'googtrans=/es/es;';
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
-          let $h4 = document.createElement('P'); $h4.innerHTML = 'Cambiar Idioma <i class="fas fa-language"></i>'; $h4.style.color = 'white';
-          const $gt_bg = document.getElementById('google_translate_element').firstElementChild; $gt_bg.classList.add('idioma');
-          const $gt = document.getElementById('google_translate_element').firstElementChild.firstElementChild;
-          $gt.classList.add('gt_select');
-          $gt.appendChild($h4);
-          document.getElementsByTagName('footer')[0].appendChild($gt);
-          $gt.addEventListener('click', ()=>{
-            //$gt.firstElementChild.innerHTML = `<option value="">Seleccionar idioma</option><option value="es">Español</option><option value="en">Inglés</option>`;
-          })
-          document.body.style.overflowY = 'scroll';
+    <meta name="application-name" content="Portfolio"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-title" content="Porfolio"/>
+    <meta name="description" content="Cristian Gramajo - Porfolio"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="browsermode" content="application"/>
+    <meta name="msapplication-TileColor" content="#1E90FF"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="theme-color" content="#1E90FF"/>
+    <link rel="apple-touch-icon" type="image/svg+xml" href="./img/favicon.svg"/>
+    <link rel="icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml"/>
+    <link rel="mask-icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml" color="#1E90FF"/>
+    <title>Cristian Gramajo</title>
+    <style>
+        .h-scroll-style::-webkit-scrollbar, .v-scroll-style::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
         }
-      </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        .h-scroll-style::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+        }
+        .h-scroll-style::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0);
+            border-radius: 31px;
+        }.v-scroll-style::-webkit-scrollbar-thumb {
+  background: #137be2;
+  border-radius: 50px;
+}
+.v-scroll-style::-webkit-scrollbar-track {
+  background: #8ec7ff;
+  border-radius: 31px;
+}
+        header{
+            background-color: dodgerblue;
+            width: 100%;
+            height: 4em;
+            position: sticky;
+            top: 0;
+        }
+        .d-flex{display: flex;}
+        .justify-content-end{justify-content: end;}
+        .justify-content-center{justify-content: center;}
+        .justify-content-between{justify-content: space-between;}
+        .justify-content-start{justify-content: start;}
+        .align-items-center{align-items: center;}
+        .flex-wrap{flex-wrap: wrap;}.justify-content-evenly{justify-content: space-evenly;}
+        header ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        header ul li{
+            list-style: none;
+            font-size: 1.2em;
+        }
+        header ul{
+            width: 34em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        header a, h1 {
+            font-family: 'Bebas Neue';
+        }h1{
+  font-size: 3em;
+}.btn{
+  border-radius: 0.4em;
+  font-weight: bold;
+}
+section{    margin: 0 auto;
+    min-height: 30em;}
+        a,p, h3, h2{font-family: sans-serif;}
+        h1{text-align: center;}
+        .card-header{
+            max-width: 10em;
+            max-width: 10em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:1em auto;
+        }.p-1{padding: 0.6em;}
+.p-2{padding: 1em;}
+.p-3{padding: 1.5em;}button{
+  border: none;
+}/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}.intro{
+  position: relative;
+  -webkit-animation: introMove 10s infinite;
+  animation: introMove 10s infinite;
+  z-index: -3;
+  height: 45em;
+}
+@keyframes introMove{
+  0%{
+      -webkit-clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+      clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+  }
+  25%{
+      -webkit-clip-path: polygon(5% 8%, 91% 15%, 95% 89%, 8% 89%);
+      clip-path: polygon(5% 8%, 91% 15%, 95% 89%, 8% 89%);
+  }
+  50%{
+      -webkit-clip-path: polygon(16% 26%, 91% 15%, 95% 89%, 6% 75%);
+      clip-path: polygon(16% 26%, 91% 15%, 95% 89%, 6% 75%);
+  }
+  75%{
+      -webkit-clip-path: polygon(19% 7%, 91% 15%, 93% 72%, 8% 93%);
+      clip-path: polygon(19% 7%, 91% 15%, 93% 72%, 8% 93%);
+  }
+  100%{
+      -webkit-clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+      clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
+  }
+}
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+            header{
+                height: 5em;
+            }
+            header ul{
+                overflow-x: scroll;
+                justify-content: start;
+                padding-left: 2em;
+                height: 100%;
+            }
+            ul{
+                width: 200%
+            }
+            ul li{
+                text-align: center;
+                margin: 0 2em 0 0em;
+            }
+            .h-scroll{
+                height: 80vh;
+                display: flex;
+                justify-content: start;
+                overflow-x: scroll;
+                flex-wrap: nowrap;
+                align-items: center;
+            }.intro{
+    position: relative;
+    -webkit-animation: none;
+    animation: none;
+    padding: 2em;
+    display: flex; justify-content: center;
+  }
+        }@media only screen and (max-width: 1200px) {
+  .intro{
+    position: relative;
+    -webkit-animation: none;
+    animation: none;
+    padding: 2em;
+    display: flex; justify-content: center;
+    border: 1em solid #fff;
+    height: 30em;
+  }
+}
+    </style>
+</head>
+<body style="margin: 0;padding: 0;" class="v-scroll-style">
+    <header class='d-flex justify-content-end align-items-center'>
+        <ul class='h-scroll-style'>
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#sobre-mi">sobre mi</a></li>
+          <li><a href="#conocimientos">conocimientos</a></li>
+          <li><a href="#extras">extras</a></li>
+          <li><a href="#proyectos">proyectos</a></li>
+          <li><a href="#contacto">contacto</a></li>
+        </ul>
+    </header>
+    <main style="padding:1em;">
+        <h1>Inicio</h1>
+        <section id='inicio' style="background-color:#272822; display:flex; justify-content:center;padding:1em;" class="intro">
+            <div style="display:flex; align-items:center">
+            <div>
+                <code style="color:whitesmoke"><span style="color:#6a993e">/*Recuerde que las cosas no son siempre como parecen ser. La curiosidad crea posibilidades y oportunidades - Roy T. Bennett */</span><br ></code><code style="color:whitesmoke" ><span style="color:#6CD5DB" >interface</span><span style="color:#4ebc7c" > IPersona</span>{<br >&emsp;<span style="color:#6CD5DB" >nombre</span>:<span style="color:#4ebc7c" >string</span>,<br >&emsp;<span style="color:#6CD5DB" >apellido</span>:<span style="color:#4ebc7c" >string</span>,<br >&emsp;<span style="color:#6CD5DB" >profesion</span>:<span style="color:#4ebc7c" >string</span><br >}<br ><span style="color:#F7286F" >const </span><span style="color:#6CD5DB" >cristian</span>:<span style="color:#4ebc7c" >IPersona</span> = {<br >&emsp;<span style="color:#6CD5DB" >nombre</span>: <span style="color:#F5A44E" >'Cristian Ismael'</span>,<br >&emsp;<span style="color:#6CD5DB" >apellido</span>: <span style="color:#F5A44E" >'Gramajo'</span>,<br >&emsp;<span style="color:#6CD5DB" >profesion</span>:<span style="color:#F5A44E" >'Desarrollador Web'</span><br >}<br ><span style="color:#F7286F" >function </span><span style="color:#AADB4D" >mePresento</span><span style="color:whitesmoke" >(<span style="color:#6CD5DB" >persona</span>:<span style="color:#4ebc7c" >IPersona</span>):<span style="color:#4ebc7c" >string</span>&ensp;</span>{ <br >&emsp;<span style="color:#F7286F" >return </span><span style="color:#F5A44E" >`Hola, mi nombre es:<span style="color:#2566ca" >${<span style="color:#6CD5DB" >persona.nombre</span>} ${<span style="color:#6CD5DB" >persona.apellido</span>}</span> y soy <span style="color:#2566ca" >${<span style="color:#6CD5DB" >persona.profesion</span>}</span>`</span>;<br >}</code>
+            </div>
+            </div>
+        </section>
+
+        <h1>Sobre Mí</h1><section id="sobre-mi"><div class="d-flex justify-content-center"><article class="col-6 p-3"><p >Tengo 26 años y el Desarrollo Web es mi pasión.</p><br ><p >Desarrollo aplicaciones fullstack modernas. Me gusta enfocarme mucho en el diseño responsive para la mejor experiencia de usuario en cualquier dispositivo.</p><br ><a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" style="background-color:#0A66C2;color:whitesmoke;text-decoration: none;" class="btn p-1">Curriculum Vitae</a></article></div></section>
+
+        <h1>Conocimientos</h1><section id="conocimientos"><div class="d-flex justify-content-center"><article class="col-8 p-2 h-scroll d-flex flex-wrap justify-content-evenly"><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/HTML5.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">HTML 5</h2><p></p></div></div><!--/qv--><!--qv q:id=d q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/CSS3.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">CSS 3</h2><p></p></div></div><!--/qv--><!--qv q:id=e q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/javascript.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">JAVASCRIPT</h2><p></p></div></div><!--/qv--><!--qv q:id=f q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/bootstrap5.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">BOOTSTRAP</h2><p></p></div></div><!--/qv--><!--qv q:id=g q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/materialize.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">MATERIALIZE</h2><p></p></div></div><!--/qv--><!--qv q:id=h q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/jquery.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">JQUERY</h2><p></p></div></div><!--/qv--><!--qv q:id=i q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/react-black.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">REACT</h2><p></p></div></div><!--/qv--><!--qv q:id=j q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/php-1.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">PHP</h2><p></p></div></div><!--/qv--><!--qv q:id=k q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/nodejs.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">NODE JS</h2><p></p></div></div><!--/qv--><!--qv q:id=l q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/mysql-2.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">MYSQL</h2><p></p></div></div><!--/qv--></article></div></section>
+
+        <h1>Extras</h1><section id="extras"><div class=" d-flex justify-content-center"><article class=" col-8 p-2 h-scroll d-flex flex-wrap justify-content-evenly"><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/postman.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">POSTMAN</h2><p>Manejo de ambientes de desarrollo, perfiles.</p></div></div><!--/qv--><!--qv q:id=n q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/adobe-xd.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">ADOBE XD</h2><p>Diseño de logos e interfaces</p></div></div><!--/qv--><!--qv q:id=o q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/figma.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">FIGMA</h2><p>Diseño de logos e interfaces</p></div></div><!--/qv--><!--qv q:id=p q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/languaje.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">INGLES</h2><p>Ingles intermedio para lectura y escritura</p></div></div><!--/qv--><!--qv q:id=q q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/office.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">PAQUETE OFFICE</h2><p>Excel, Word, OneNote, Powerpoint</p></div></div><!--/qv--></article></div></section>
+
+        <h1>Proyectos</h1><section id="proyectos"><div class=" d-flex justify-content-center"><article class=" col-8 p-2 h-scroll d-flex flex-wrap justify-content-evenly"><div style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/horabondi.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">HoraBondi</h2><p>Esta es una SPA y PWA, en la cual podemos consultar los horarios de los colectivos urbanos de la provincia de Tucumán. Entre ellos: Exprebus, Tesa, Gutiérrez. Además, podemos consultar los precios, ver publicaciones de cada empresa o del sitio, e imprimir los horarios. Hecho en HTML, CSS, JS, Materialize, PHP y MySQL.</p></div><div class="card-footer d-flex justify-content-between p-1"><a href="https://horabondi.vercel.app/" style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a href="https://github.com/Cristian021195/horabondi" style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver Repositorio</a></div></div><q:template q:slot="" hidden="" aria-hidden="true"><a href="#" style="background-color:red" class="btn p-1">Probar</a></q:template><!--/qv--><!--qv q:id=s q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/panerita.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">Panerita</h2><p>PWA para distribuidora de productos alimenticios. La aplicación trabaja con roles y diferentes permisos, genera, edita e imprime comprobantes, maneja stock de productos y analiza la cantidad de productos vendidos por fechas. Hecho en HTML, CSS, JS, Bootstrap 5, PHP y MySQL.</p></div><div class="card-footer d-flex justify-content-between p-1"><a href="https://panerita.000webhostapp.com/panerita/" style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a href="https://github.com/Cristian021195/panerita" style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver Repositorio</a></div></div><q:template q:slot="" hidden="" aria-hidden="true"><a href="#" style="background-color:red" class="btn p-1">Probar</a></q:template><!--/qv--><!--qv q:id=t q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/notas.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">Notas</h2><p>Es una PWA centrada en el funcionamiento offline de una simple aplicación de notas, con la librería PouchDB y uso de una tabla dinámica que yo diseñé. Hecho con Bootstrap, HTML y JS.</p></div><div class="card-footer d-flex justify-content-between p-1"><a href="https://cristian021195.github.io/notas/" style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a href="https://github.com/Cristian021195/notas" style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver Repositorio</a></div></div><q:template q:slot="" hidden="" aria-hidden="true"><a href="#" style="background-color:red" class="btn p-1">Probar</a></q:template><!--/qv--><!--qv q:id=u q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/climap.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">Climap</h2><p>Es una PWA de muy simple diseño, con uso de React Router y alojada en Google Cloud Services (lo que permite mejor experiencia con las rutas), hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.</p></div><div class="card-footer d-flex justify-content-between p-1"><a href="https://climap-6e45e.web.app/" style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a href="https://github.com/Cristian021195/climap" style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver Repositorio</a></div></div><q:template q:slot="" hidden="" aria-hidden="true"><a href="#" style="background-color:red" class="btn p-1">Probar</a></q:template><!--/qv--><!--qv q:id=v q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/escritos.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">Escritos</h2><p>Es una PWA, alojada en Firebase Hosting. Hace uso de una API propia montada en heroku y otra pública, además puede notificarte cuando haya nuevos escritos. Hecho con React JS, y CSS.</p></div><div class="card-footer d-flex justify-content-between p-1"><a href="https://escritos-f9d8d.web.app/" style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a href="https://github.com/Cristian021195/escritos-fontend" style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver Repositorio</a></div></div><!--/qv--><!--qv q:id=w q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/lista-compras.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">ListaCompras</h2><p>Es una PWA, desplegada en Vercel, hecho con React JS, y CSS + DexieJS. Sirve para llevar control en un dia de compras en el supermercado</p></div><div class="card-footer d-flex justify-content-between p-1"><a href="https://listacompras-omega.vercel.app/" style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a href="https://github.com/Cristian021195/compras" style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver Repositorio</a></div></div><!--/qv--></article></div></section>
+
+    </main>
+    <footer id="contacto" style="background-color:#18191a;color:whitesmoke;text-align:center" class="p-3"><h1>Contacto</h1><p>Hablame por alguna de estas redes sociales, ó &nbsp;<button style="background-color:#E57373;color:whitesmoke" class="btn p-1" onclick="compartir()">Comparte</button>&nbsp;este portfolio a quien necesite.</p><div><a href="mailto:cristiangramajo015@gmail.com" style="background-color:#E57373;color:whitesmoke" class="btn p-1">GMail</a>&nbsp;&nbsp;<a href="https://github.com/Cristian021195" style="background-color:#546E7A;color:whitesmoke" class="btn p-1">GitHub</a>&nbsp;&nbsp;<a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" style="background-color:#FBC02D;color:whitesmoke" class="btn p-1">CV</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/cristian-ismael-gramajo-760534165/" style="background-color:#0A66C2;color:whitesmoke" class="btn p-1">LinkedIn</a>&nbsp;&nbsp;</div></footer>
+    <script>
+        function compartir(){
+            if(navigator){    
+      if(navigator.share){
+        navigator.share({
+            title:'Portfolio',
+            text:'Portfolio Cristian Gramajo',
+            url:'/'
+        }).then(()=>{
+            return true;
+        }).catch(()=>{
+            return false;
+        })
+      }else{
+          alert('¡no soporta compartir!')
+      }
+    }
+        }
+    </script>
 </body>
 </html>
