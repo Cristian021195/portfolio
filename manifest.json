@@ -1,0 +1,16 @@
+{
+    "name": "Portfolio",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "theme_color": "#1E90FF",
+    "background_color": "#61b1ff",
+    "description": "Portfolio, Cristian Ismael Gramajo.",
+    "icons": [
+        {
+            "src":"./img/favicon.svg",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}

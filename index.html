@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+    <link rel="manifest" href="./manifest.json"><!--el archivo de manifiesto permite lo instalable, aun asi si el sw se puede registrar y usar cache y sus ventajas-->
 
     <meta name="application-name" content="Portfolio"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -384,6 +385,10 @@ input[type="checkbox"]{display: none;}
     </main>
     <footer id="contacto" style="background-color:#18191a;color:whitesmoke;text-align:center" class="p-3"><h1>Contacto</h1><p>Hablame por alguna de estas redes sociales, ó &nbsp;<button style="background-color:#E57373;color:whitesmoke" class="btn p-1" onclick="compartir()">Comparte</button>&nbsp;este portfolio a quien necesite.</p><div><a href="mailto:cristiangramajo015@gmail.com" style="background-color:#E57373;color:whitesmoke" class="btn p-1">GMail</a>&nbsp;&nbsp;<a href="https://github.com/Cristian021195" style="background-color:#546E7A;color:whitesmoke" class="btn p-1">GitHub</a>&nbsp;&nbsp;<a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" style="background-color:#FBC02D;color:whitesmoke" class="btn p-1">CV</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/cristian-ismael-gramajo-760534165/" style="background-color:#0A66C2;color:whitesmoke" class="btn p-1">LinkedIn</a>&nbsp;&nbsp;</div></footer>
     <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("./serviceworker.js");
+        }
+
         function compartir(){
             if(navigator){    
       if(navigator.share){
