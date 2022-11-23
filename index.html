@@ -140,6 +140,20 @@ section{    margin: 0 auto;
   z-index: -3;
   height: 45em;
 }
+#caja1{
+    background-color: dodgerblue;
+    grid-column: 5/8;grid-row: 1/6;
+    text-align: end;color: whitesmoke;
+}
+#caja2{
+    border-radius: 0.2em; grid-column: 1/6;grid-row: 2/5;
+}
+#caja3{
+    padding-right: 1em; grid-column: 6/8;grid-row: 4/8; display: flex; justify-content: center; align-items: center;
+}
+#caja4{
+    grid-column: 1/5;grid-row: 5/8;
+}
 
 @keyframes introMove{
   0%{
@@ -207,6 +221,19 @@ section{    margin: 0 auto;
     border: 1em solid #fff;
     height: 30em;
   }
+  #caja1{
+    grid-column: 1/8;grid-row: 1/2;text-align: center; background-color: #fff; color: #000;display: flex; align-items: center; justify-content: center;
+  }
+  #caja2{
+    display: none;grid-column: 1/1;grid-row: 1/1; background-color: red;
+  }
+  #caja3{
+    padding-right: 0em; grid-column: 1/8;grid-row: 2/6; display: flex; justify-content: center; align-items: center;
+    }
+    #caja4{
+        grid-column: 1/8;grid-row: 6/8;
+    }
+
 }
 .card-body p { white-space: nowrap; width: auto; overflow: hidden; text-overflow: ellipsis;}
 .card-body label::before{content: 'Leer Mas';}
@@ -214,6 +241,9 @@ input[type="checkbox"]{display: none;}
 
 #horabondi_c:checked ~ p{white-space: initial; width: auto; overflow: hidden; text-overflow: ellipsis;}
 #horabondi_c:checked ~ label::before{content: 'Leer Menos';}
+
+#horabondi_beta_c:checked ~ p{white-space: initial; width: auto; overflow: hidden; text-overflow: ellipsis;}
+#horabondi_beta_c:checked ~ label::before{content: 'Leer Menos';}
 
 #panerita_c:checked ~ p{white-space: initial; width: auto; overflow: hidden; text-overflow: ellipsis;}
 #panerita_c:checked ~ label::before{content: 'Leer Menos';}
@@ -230,6 +260,20 @@ input[type="checkbox"]{display: none;}
 #listacompras_c:checked ~ p{white-space: initial; width: auto; overflow: hidden; text-overflow: ellipsis;}
 #listacompras_c:checked ~ label::before{content: 'Leer Menos';}
 
+.custom-grid {  display: grid;
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 1em; 
+  grid-template-areas: 
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."; 
+}
     </style>
 </head>
 <body style="margin: 0;padding: 0;" class="v-scroll-style">
@@ -254,10 +298,30 @@ input[type="checkbox"]{display: none;}
             </div>
         </section>
         <div id="sobre-mi" style="margin-bottom: 5em;"></div>
-        <h1>Sobre Mí</h1><section><div class="d-flex justify-content-center"><article class="col-6 p-3"><p >Tengo 27 años y el Desarrollo Web es mi pasión.</p><br ><p >Desarrollo aplicaciones fullstack modernas. Me gusta enfocarme mucho en el diseño responsive para la mejor experiencia de usuario en cualquier dispositivo.</p><br ><a href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing" target="_blank" rel="noopener" style="background-color:#0A66C2;color:whitesmoke;text-decoration: none;" class="btn p-1">Curriculum Vitae</a></article></div></section>
+        <h1>Sobre Mí</h1>
+        <section class="col-6 d-flex">
+            <div class="custom-grid col-12 p-3">
+                <div id="caja1" style="border-radius: 0.2em;" class="p-3">
+                    <h2>Hola, Soy Cristian</h2>
+                </div>
+                <div id="caja2" style="background-image: url('./img/horizontal.webp');background-repeat: no-repeat; background-size: cover;" class="p-3">
+                </div>
+                <div id="caja3">
+                    <img src="./img/vertical.webp" alt="" width="100%" height="100%" style="border-radius: 0.2em; object-fit: contain;">
+                </div>
+                <div id="caja4" class="p-3">
+                    <p>Tengo 27 años y el Desarrollo Web es mi pasión.</p><br>
+                    <p>Desarrollo aplicaciones fullstack modernas. Me gusta enfocarme mucho en el diseño responsive para la
+                        mejor experiencia de usuario en cualquier dispositivo.</p><br><a
+                        href="https://drive.google.com/file/d/12J3lBtxtGnumXmhQArdV0xGZigtWchUl/view?usp=sharing"
+                        target="_blank" rel="noopener" style="background-color:#0A66C2;color:whitesmoke;text-decoration: none;"
+                        class="btn p-1">Curriculum Vitae</a>
+                </div>
+            </div>
+        </section>
 
         <div id="conocimientos" style="margin-bottom: 5em;"></div>
-        <h1>Conocimientos</h1><section><div class="d-flex justify-content-center"><article class="col-8 p-2 h-scroll d-flex flex-wrap justify-content-evenly"><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/HTML5.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">HTML 5</h2><p></p></div></div><!--qv q:id=d q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/CSS3.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">CSS 3</h2><p></p></div></div><!--qv q:id=e q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/javascript.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">JAVASCRIPT</h2><p></p></div></div><!--qv q:id=f q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/bootstrap5.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">BOOTSTRAP</h2><p></p></div></div><!--qv q:id=g q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/materialize.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">MATERIALIZE</h2><p></p></div></div><!--qv q:id=h q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/jquery.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">JQUERY</h2><p></p></div></div><!--qv q:id=i q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/react-black.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">REACT</h2><p></p></div></div><!--qv q:id=j q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/php-1.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">PHP</h2><p></p></div></div><!--qv q:id=k q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/nodejs.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">NODE JS</h2><p></p></div></div><!--qv q:id=l q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/mysql-2.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">MYSQL</h2><p></p></div></div></article></div></section>
+        <h1>Conocimientos</h1><section><div class="d-flex justify-content-center"><article class="col-8 p-2 h-scroll d-flex flex-wrap justify-content-evenly"><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/HTML5.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">HTML 5</h2><p></p></div></div><!--qv q:id=d q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/CSS3.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">CSS 3</h2><p></p></div></div><!--qv q:id=e q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/javascript.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">JAVASCRIPT</h2><p></p></div></div><!--qv q:id=f q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/bootstrap5.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">BOOTSTRAP</h2><p></p></div></div><!--qv q:id=g q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/materialize.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">MATERIALIZE</h2><p></p></div></div><!--qv q:id=h q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/jquery.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">JQUERY</h2><p></p></div></div><!--qv q:id=i q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/react-black.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">REACT</h2><p></p></div></div><!--qv q:id=j q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/php-1.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">PHP</h2><p></p></div></div><!--qv q:id=k q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/nodejs.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">NODE JS</h2><p></p></div></div><!--qv q:id=l q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/mysql-2.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">MYSQL</h2><p></p></div></div><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/nextjs.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">NEXTJS</h2><p></p></div></div></article></div></section>
 
         <div id="extras" style="margin-bottom: 5em;"></div>
         <h1>Extras</h1><section><div class=" d-flex justify-content-center"><article class=" col-8 p-2 h-scroll d-flex flex-wrap justify-content-evenly"><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/postman.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">POSTMAN</h2><p>Manejo de ambientes de desarrollo, perfiles.</p></div></div><!--qv q:id=n q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/adobe-xd.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">ADOBE XD</h2><p>Diseño de logos e interfaces</p></div></div><!--qv q:id=o q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/figma.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">FIGMA</h2><p>Diseño de logos e interfaces</p></div></div><!--qv q:id=p q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/languaje.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">INGLES</h2><p>Ingles intermedio para lectura y escritura</p></div></div><!--qv q:id=q q:key=Rr0tomyRvMg:--><div style="background-color:whitesmoke;border-radius:0.5em;width:12em;min-width:12em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)"><div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img src="./img/svg/office.svg" width="75%" height="75%" alt="images" style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div><div class="card-body p-1"><h2 style="text-align:center">PAQUETE OFFICE</h2><p>Excel, Word, OneNote, Powerpoint</p></div></div></article></div></section>
@@ -378,6 +442,24 @@ input[type="checkbox"]{display: none;}
                                     href="https://listacompras-omega.vercel.app/" target="_blank"
                                     style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a
                                     href="https://github.com/Cristian021195/compras" target="_blank"
+                                    style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver
+                                    Repositorio</a></div>
+                        </div>
+                        <div
+                            style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)">
+                            <div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img
+                                    src="./img/svg/horabondi-beta.svg" width="75%" height="75%" alt="images"
+                                    style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div>
+                            <div class="card-body p-1">
+                                <h2 style="text-align:center">HoraBondi (Beta)</h2>
+                                <input type="checkbox" id="horabondi_beta_c">
+                                <p>Es una PWA, alojada en 000WebhostApp, hecho con, HTML5, CSS, Vanilla JS y Materialize. Tambien hace uso de MySQL</p>
+                                    <label for="horabondi_beta_c"></label>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between p-1"><a
+                                    href="https://horabondis.000webhostapp.com/" target="_blank"
+                                    style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a
+                                    href="https://github.com/Cristian021195/horabondi-beta" target="_blank"
                                     style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver
                                     Repositorio</a></div>
                         </div>
