@@ -77,6 +77,9 @@
             height: 4em;
             position: sticky;
             top: 0;
+            box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.5);
         }
         .d-flex{display: flex;}
         .justify-content-end{justify-content: end;}
@@ -264,6 +267,9 @@ input[type="checkbox"]{display: none;}
 
 #listacompras_c:checked ~ p{white-space: initial; width: auto; overflow: hidden; text-overflow: ellipsis;}
 #listacompras_c:checked ~ label::before{content: 'Leer Menos';}
+
+#radio_c:checked ~ p{white-space: initial; width: auto; overflow: hidden; text-overflow: ellipsis;}
+#radio_c:checked ~ label::before{content: 'Leer Menos';}
 
 .custom-grid {  display: grid;
     display: grid; 
@@ -556,7 +562,7 @@ input[type="checkbox"]{display: none;}
                             <div class="card-body p-1">
                                 <h2 style="text-align:center">ListaCompras</h2>
                                 <input type="checkbox" id="listacompras_c">
-                                <p>Es una PWA, desplegada en Vercel, hecho con React JS, y CSS + DexieJS. Sirve para llevar control
+                                <p>Es una PWA, desplegada en Vercel, hecho con React JS + TypeScript, y CSS + DexieJS. Sirve para llevar control
                                     en un dia de compras en el supermercado</p>
                                     <label for="listacompras_c"></label>
                             </div>
@@ -564,6 +570,24 @@ input[type="checkbox"]{display: none;}
                                     href="https://listacompras-omega.vercel.app/" target="_blank"
                                     style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a
                                     href="https://github.com/Cristian021195/compras" target="_blank"
+                                    style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver
+                                    Repositorio</a></div>
+                        </div>
+                        <div
+                            style="background-color:whitesmoke;border-radius:0.5em;width:16em;min-width:16em;margin:2em;box-shadow:5px 7px 7px 0px rgba(0,0,0,0.1)">
+                            <div style="min-height:10em;background-color:#ECEFF1;border-radius:50%" class="card-header p-1"><img
+                                    src="./img/svg/radio-app.svg" width="75%" height="75%" alt="images"
+                                    style="border-radius:0.5em 0.5em 0 0" loading="lazy"></div>
+                            <div class="card-body p-1">
+                                <h2 style="text-align:center">Radio App</h2>
+                                <input type="checkbox" id="radio_c">
+                                <p>Es una PWA, desplegada en Vercel, hecho con React JS + TypeScript + Redux. Tiene presets cargados para escuchar, sino se pueden agregar radios nuevas por URL</p>
+                                    <label for="radio_c"></label>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between p-1"><a
+                                    href="https://radio-taupe.vercel.app/" target="_blank"
+                                    style="background-color:#000;text-decoration:none;color:whitesmoke" class="btn p-1">Probar</a><a
+                                    href="https://github.com/Cristian021195/radio" target="_blank"
                                     style="background-color:#A2B5BB;text-decoration:none;color:whitesmoke" class="btn p-1">Ver
                                     Repositorio</a></div>
                         </div>
