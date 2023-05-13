@@ -1,0 +1,35 @@
+[
+    {
+        "codigo": "1",
+        "nombre": "Camiseta de algodón",
+        "categoria": "Ropa",
+        "imagen": "https://ejemplo.com/imagen.jpg",
+        "especialidad":"",
+        "ubicacion":"",
+        "descripcion": "Camiseta de algodón suave y cómoda en color blanco.",
+        "tiempo": "10 minutos",
+        "resena": "Muy buena calidad, me encanta cómo queda puesta."
+    },
+    {
+        "codigo": "2",
+        "nombre": "Camiseta de algodón",
+        "categoria": "Ropa",
+        "imagen": "https://ejemplo.com/imagen.jpg",
+        "especialidad":"",
+        "ubicacion":"",
+        "descripcion": "Camiseta de algodón suave y cómoda en color blanco.",
+        "tiempo": "10 minutos",
+        "resena": "Muy buena calidad, me encanta cómo queda puesta."
+    },
+    {
+        "codigo": "3",
+        "nombre": "Camiseta de algodón",
+        "categoria": "Ropa",
+        "imagen": "https://ejemplo.com/imagen.jpg",
+        "especialidad":"",
+        "ubicacion":"",
+        "descripcion": "Camiseta de algodón suave y cómoda en color blanco.",
+        "tiempo": "10 minutos",
+        "resena": "Muy buena calidad, me encanta cómo queda puesta."
+    }
+]
