@@ -1,998 +1,401 @@
 <!doctype html>
 <html lang=es style=scroll-behavior:smooth>
-
 <head>
-    <meta charset=UTF-8>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <link rel=icon type=image/svg+xml href=./img/favicon.svg>
-    <link rel=preconnect href=https://fonts.googleapis.com>
-    <link rel=preconnect href=https://fonts.gstatic.com crossOrigin="">
-    <link rel=manifest href=./manifest.json>
-    <meta name=application-name content=Portfolio>
-    <meta name=apple-mobile-web-app-capable content=yes>
-    <meta name=apple-mobile-web-app-status-bar-style content=default>
-    <meta name=apple-mobile-web-app-title content="Cristian Gramajo">
-    <meta name=description content="Porfolio personal - Personal Website">
-    <meta name=format-detection content="telephone=no">
-    <meta name=mobile-web-app-capable content=yes>
-    <meta name=x5-page-mode content=app>
-    <meta name=browsermode content=application>
-    <meta name=msapplication-TileColor content=#1E90FF>
-    <meta name=msapplication-tap-highlight content=no>
-    <meta name=theme-color content=#1E90FF>
-    <meta property=og:title content="Cristian Gramajo">
-    <meta property=og:type content=website>
-    <meta property=og:image content=https://cristian021195.github.io/portfolio/img/dev-icon.jpg>
-    <meta property=og:url content=https://cristian021195.github.io/portfolio/>
-    <meta property=og:site_name content="Cristian Ismael Gramajo">
-    <meta property=og:description content="Porfolio personal - Personal Website">
-    <link rel=apple-touch-icon type=image/svg+xml href=./img/favicon.svg>
-    <link rel=apple-touch-icon sizes=192x192 href=./img/icon-192x192.png>
-    <link rel=apple-touch-icon sizes=256x256 href=./img/icon-256x256.png>
-    <link rel=apple-touch-icon sizes=512x512 href=./img/icon-512x512.png>
-    <link rel=mask-icon href=./img/favicon.svg sizes=any type=image/svg+xml color=#1E90FF>
-    <title>Cristian Gramajo</title>
-    <style>
-        .btn-blue,
-        .btn-dark,
-        .btn-grey,
-        header ul li a {
-            text-decoration: none;
-            color: #f5f5f5
-        }
-
-        #caja1,
-        header {
-            background-color: #1e90ff
-        }
-
-        #caja1,
-        .btn-blue,
-        .btn-dark,
-        .btn-grey,
-        footer {
-            color: #f5f5f5
-        }
-
-        #caja3,
-        .card-header,
-        .d-flex,
-        header ul {
-            display: flex
-        }
-
-        .card-body h2,
-        footer,
-        h1 {
-            text-align: center
-        }
-
-        @font-face {
-            font-family: 'Bebas Neue';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('./css/BebasNeue-Regular.woff2') format('woff2'), url('./css/BebasNeue-Regular.woff') format('woff');
-            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-        }
-
-        @font-face {
-            font-family: 'Bebas Neue';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('./css/BebasNeue-Regular.woff2') format('woff2'), url('./css/BebasNeue-Regular.woff') format('woff');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-        }
-
-        .h-scroll-style::-webkit-scrollbar,
-        .v-scroll-style::-webkit-scrollbar {
-            width: 7px;
-            height: 7px
-        }
-
-        .h-scroll-style::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, .3);
-            border-radius: 50px
-        }
-
-        .h-scroll-style::-webkit-scrollbar-track {
-            background: rgba(0, 0, 0, 0);
-            border-radius: 31px
-        }
-
-        .v-scroll-style::-webkit-scrollbar-thumb {
-            background: #137be2;
-            border-radius: 50px
-        }
-
-        footer {
-            background-color: #18191a
-        }
-
-        .v-scroll-style::-webkit-scrollbar-track {
-            background: #8ec7ff;
-            border-radius: 31px
-        }
-
-        header {
-            width: 100%;
-            height: 4em;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 2px 6px -1px rgba(0, 0, 0, .5);
-            -webkit-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, .5);
-            -moz-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, .5)
-        }
-
-        .justify-content-end {
-            justify-content: end
-        }
-
-        .card-header,
-        .justify-content-center {
-            justify-content: center
-        }
-
-        .justify-content-between {
-            justify-content: space-between
-        }
-
-        .justify-content-start {
-            justify-content: start
-        }
-
-        .align-items-center {
-            align-items: center
-        }
-
-        .flex-wrap {
-            flex-wrap: wrap
-        }
-
-        .justify-content-evenly {
-            justify-content: space-evenly
-        }
-
-        header ul li {
-            list-style: none;
-            font-size: 1.2em
-        }
-
-        header ul {
-            width: 34em;
-            justify-content: space-evenly;
-            align-items: center
-        }
-
-        h1,
-        header a {
-            font-family: 'Bebas Neue', sans-serif
-        }
-
-        h1 {
-            font-size: 3em
-        }
-
-        .btn {
-            border-radius: .4em;
-            font-weight: 700
-        }
-
-        .neurobox,
-        table {
-            border-radius: .5rem
-        }
-
-        .btn-dark {
-            background-color: #000
-        }
-
-        .btn-grey {
-            background-color: #879ca3
-        }
-
-        .btn-blue {
-            background-color: #0a66c2
-        }
-
-        .btn:hover {
-            cursor: pointer
-        }
-
-        .neurobox {
-            background-color: #f5f5f5;
-            box-shadow: 5px 7px 7px 0 rgba(0, 0, 0, .1)
-        }
-
-        td,
-        th {
-            padding: 1rem
-        }
-
-        td a img {
-            width: 1rem
-        }
-
-        tr th {
-            text-align: start
-        }
-
-        tr {
-            border-bottom: 1px solid #cfcfcf
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 1rem
-        }
-
-        button,
-        tbody tr:last-child {
-            border: none
-        }
-
-        section {
-            margin: 0 auto;
-            min-height: 30em
-        }
-
-        a,
-        h2,
-        h3,
-        label,
-        p,
-        section {
-            font-family: sans-serif
-        }
-
-        label {
-            color: #0977e4;
-            text-decoration: underline
-        }
-
-        .card-header {
-            max-width: 10em;
-            align-items: center;
-            margin: 1em auto;
-            min-height: 10em;
-            background-color: #eceff1;
-            border-radius: 50%
-        }
-
-        .circle-svg,
-        .ecard,
-        .pcard {
-            background-color: #f5f5f5;
-            border-radius: .5em;
-            margin: 2em;
-            box-shadow: 5px 7px 7px 0 rgba(0, 0, 0, .1)
-        }
-
-        .circle-svg,
-        .ecard {
-            width: 12em;
-            min-width: 12em
-        }
-
-        .pcard {
-            width: 16em;
-            min-width: 16em
-        }
-
-        .card-header img {
-            border-radius: .5em .5em 0 0;
-            width: 75%;
-            height: 75%
-        }
-
-        .p-1 {
-            padding: .6em
-        }
-
-        .p-2 {
-            padding: 1em
-        }
-
-        .p-3 {
-            padding: 1.5em
-        }
-
-        .mb-8 {
-            margin-bottom: 8rem
-        }
-
-        .col-1 {
-            width: 8.33%
-        }
-
-        .col-2 {
-            width: 16.66%
-        }
-
-        .col-3 {
-            width: 25%
-        }
-
-        .col-4 {
-            width: 33.33%
-        }
-
-        .col-5 {
-            width: 41.66%
-        }
-
-        .col-6 {
-            width: 50%
-        }
-
-        .col-7 {
-            width: 58.33%
-        }
-
-        .col-8 {
-            width: 66.66%
-        }
-
-        .col-9 {
-            width: 75%
-        }
-
-        .col-10 {
-            width: 83.33%
-        }
-
-        .col-11 {
-            width: 91.66%
-        }
-
-        .col-12 {
-            width: 100%
-        }
-
-        .intro {
-            position: relative;
-            -webkit-animation: 10s infinite introMove;
-            animation: 10s infinite introMove;
-            z-index: -3;
-            height: 45em
-        }
-
-        #caja1 {
-            grid-column: 5/8;
-            grid-row: 1/6;
-            text-align: end
-        }
-
-        #caja2 {
-            border-radius: .2em;
-            grid-column: 1/6;
-            grid-row: 2/5
-        }
-
-        #caja3 {
-            padding-right: 1em;
-            grid-column: 6/8;
-            grid-row: 4/8;
-            justify-content: center;
-            align-items: center
-        }
-
-        #caja4 {
-            grid-column: 1/5;
-            grid-row: 5/8
-        }
-
-        @keyframes introMove {
-
-            0%,
-            100% {
-                -webkit-clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%);
-                clip-path: polygon(3% 19%, 92% 5%, 96% 93%, 8% 89%)
-            }
-
-            25% {
-                -webkit-clip-path: polygon(5% 8%, 91% 15%, 95% 89%, 8% 89%);
-                clip-path: polygon(5% 8%, 91% 15%, 95% 89%, 8% 89%)
-            }
-
-            50% {
-                -webkit-clip-path: polygon(16% 26%, 91% 15%, 95% 89%, 6% 75%);
-                clip-path: polygon(16% 26%, 91% 15%, 95% 89%, 6% 75%)
-            }
-
-            75% {
-                -webkit-clip-path: polygon(19% 7%, 91% 15%, 93% 72%, 8% 93%);
-                clip-path: polygon(19% 7%, 91% 15%, 93% 72%, 8% 93%)
-            }
-        }
-
-        @media only screen and (max-width:768px) {
-            [class*=col-] {
-                width: 100%
-            }
-
-            header {
-                height: 5em
-            }
-
-            header ul {
-                overflow-x: scroll;
-                justify-content: start;
-                padding-left: 2em;
-                height: 100%
-            }
-
-            ul {
-                width: 200%
-            }
-
-            ul li {
-                text-align: center;
-                margin: 0 2em 0 0
-            }
-
-            .h-scroll {
-                display: flex;
-                justify-content: start;
-                overflow-x: scroll;
-                flex-wrap: nowrap;
-                align-items: center
-            }
-
-            .intro {
-                position: relative;
-                -webkit-animation: none;
-                animation: none;
-                padding: 2em;
-                display: flex;
-                justify-content: center
-            }
-        }
-
-        @media only screen and (max-width:1200px) {
-
-            #caja1,
-            #caja3,
-            .intro {
-                display: flex
-            }
-
-            #caja1,
-            #caja3,
-            #caja4 {
-                grid-column: 1/8
-            }
-
-            .intro {
-                position: relative;
-                -webkit-animation: none;
-                animation: none;
-                padding: 2em;
-                justify-content: center;
-                border: 1em solid #fff;
-                height: 30em
-            }
-
-            #caja1 {
-                grid-row: 1/2;
-                text-align: center;
-                background-color: #fff;
-                color: #000;
-                align-items: center;
-                justify-content: center
-            }
-
-            #caja2 {
-                display: none;
-                grid-column: 1/1;
-                grid-row: 1/1;
-                background-color: red
-            }
-
-            #caja3 {
-                padding-right: 0;
-                grid-row: 2/6;
-                justify-content: center;
-                align-items: center
-            }
-
-            #caja4 {
-                grid-row: 6/8
-            }
-        }
-
-        .pcard .card-body p {
-            white-space: nowrap;
-            width: auto;
-            overflow: hidden;
-            text-overflow: ellipsis
-        }
-
-        .card-body label::before {
-            content: 'Leer Mas'
-        }
-
-        input[type=checkbox] {
-            display: none
-        }
-
-        #climap_c:checked~p,
-        #colores_c:checked~p,
-        #escritos_c:checked~p,
-        #horabondi_c:checked~p,
-        #listacompras_c:checked~p,
-        #notas_c:checked~p,
-        #panerita_c:checked~p,
-        #radio_c:checked~p,
-        #roll_vet_c:checked~p,
-        #romano_c:checked~p {
-            white-space: initial;
-            width: auto;
-            overflow: hidden;
-            text-overflow: ellipsis
-        }
-
-        #climap_c:checked~label::before,
-        #colores_c:checked~label::before,
-        #escritos_c:checked~label::before,
-        #horabondi_c:checked~label::before,
-        #listacompras_c:checked~label::before,
-        #notas_c:checked~label::before,
-        #panerita_c:checked~label::before,
-        #radio_c:checked~label::before,
-        #roll_vet_c:checked~label::before,
-        #romano_c:checked~label::before {
-            content: 'Leer Menos'
-        }
-
-        .custom-grid {
-            display: grid;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            gap: 1em;
-            grid-template-areas: ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ."
-        }
-    </style>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon type=image/svg+xml href=./img/favicon.svg>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossOrigin="">
+<link rel=manifest href=./manifest.json>
+<meta name=application-name content=Portfolio>
+<meta name=apple-mobile-web-app-capable content=yes>
+<meta name=apple-mobile-web-app-status-bar-style content=default>
+<meta name=apple-mobile-web-app-title content="Cristian Gramajo">
+<meta name=description content="Porfolio personal - Personal Website">
+<meta name=format-detection content="telephone=no">
+<meta name=mobile-web-app-capable content=yes>
+<meta name=x5-page-mode content=app>
+<meta name=browsermode content=application>
+<meta name=msapplication-TileColor content=#1E90FF>
+<meta name=msapplication-tap-highlight content=no>
+<meta name=theme-color content=#1E90FF>
+<meta property=og:title content="Cristian Gramajo">
+<meta property=og:type content=website>
+<meta property=og:image content=https://cristian021195.github.io/portfolio/img/dev-icon.jpg>
+<meta property=og:url content=https://cristian021195.github.io/portfolio/ >
+<meta property=og:site_name content="Cristian Ismael Gramajo">
+<meta property=og:description content="Porfolio personal - Personal Website">
+<link rel=apple-touch-icon type=image/svg+xml href=./img/favicon.svg>
+<link rel=apple-touch-icon sizes=192x192 href=./img/icon-192x192.png>
+<link rel=apple-touch-icon sizes=256x256 href=./img/icon-256x256.png>
+<link rel=apple-touch-icon sizes=512x512 href=./img/icon-512x512.png>
+<link rel=mask-icon href=./img/favicon.svg sizes=any type=image/svg+xml color=#1E90FF>
+<title>Cristian Gramajo</title>
+<style>.btn-blue,.btn-dark,.btn-grey,header ul li a{text-decoration:none;color:#f5f5f5}#caja1,header{background-color:#1e90ff}#caja1,.btn-blue,.btn-dark,.btn-grey,footer{color:#f5f5f5}#caja3,.card-header,.d-flex,header ul{display:flex}.card-body h2,footer,h1{text-align:center}@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('./css/BebasNeue-Regular.woff2') format('woff2'),url('./css/BebasNeue-Regular.woff') format('woff');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('./css/BebasNeue-Regular.woff2') format('woff2'),url('./css/BebasNeue-Regular.woff') format('woff');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.h-scroll-style::-webkit-scrollbar,.v-scroll-style::-webkit-scrollbar{width:7px;height:7px}.h-scroll-style::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:50px}.h-scroll-style::-webkit-scrollbar-track{background:rgba(0,0,0,0);border-radius:31px}.v-scroll-style::-webkit-scrollbar-thumb{background:#137be2;border-radius:50px}footer{background-color:#18191a}.v-scroll-style::-webkit-scrollbar-track{background:#8ec7ff;border-radius:31px}header{width:100%;height:4em;position:sticky;top:0;box-shadow:0 2px 6px -1px rgba(0,0,0,.5);-webkit-box-shadow:0 2px 6px -1px rgba(0,0,0,.5);-moz-box-shadow:0 2px 6px -1px rgba(0,0,0,.5)}.justify-content-end{justify-content:end}.card-header,.justify-content-center{justify-content:center}.justify-content-between{justify-content:space-between}.justify-content-start{justify-content:start}.align-items-center{align-items:center}.flex-wrap{flex-wrap:wrap}.justify-content-evenly{justify-content:space-evenly}header ul li{list-style:none;font-size:1.2em}header ul{width:34em;justify-content:space-evenly;align-items:center}h1,header a{font-family:'Bebas Neue',sans-serif}h1{font-size:3em}.btn{border-radius:.4em;font-weight:700}.neurobox,table{border-radius:.5rem}.btn-dark{background-color:#000}.btn-grey{background-color:#879ca3}.btn-blue{background-color:#0a66c2}.btn:hover{cursor:pointer}.neurobox{background-color:#f5f5f5;box-shadow:5px 7px 7px 0 rgba(0,0,0,.1)}td,th{padding:1rem}td a img{width:1rem}tr th{text-align:start}tr{border-bottom:1px solid #cfcfcf}table{border-collapse:collapse;width:100%;margin:1rem}button,tbody tr:last-child{border:none}section{margin:0 auto;min-height:30em}a,h2,h3,label,p,section{font-family:sans-serif}label{color:#0977e4;text-decoration:underline;cursor:pointer}.card-header{max-width:10em;align-items:center;margin:1em auto;min-height:10em;background-color:#eceff1;border-radius:50%}.circle-svg,.ecard,.pcard{background-color:#f5f5f5;border-radius:.5em;margin:2em;box-shadow:5px 7px 7px 0 rgba(0,0,0,.1)}.circle-svg,.ecard{width:12em;min-width:12em}.pcard{width:16em;min-width:16em}.card-header img{border-radius:.5em .5em 0 0;width:75%;height:75%}.p-1{padding:.6em}.p-2{padding:1em}.p-3{padding:1.5em}.mb-8{margin-bottom:8rem}.col-1{width:8.33%}.col-2{width:16.66%}.col-3{width:25%}.col-4{width:33.33%}.col-5{width:41.66%}.col-6{width:50%}.col-7{width:58.33%}.col-8{width:66.66%}.col-9{width:75%}.col-10{width:83.33%}.col-11{width:91.66%}.col-12{width:100%}.intro{position:relative;-webkit-animation:10s infinite introMove;animation:10s infinite introMove;z-index:-3;height:45em}#caja1{grid-column:5/8;grid-row:1/6;text-align:end}#caja2{border-radius:.2em;grid-column:1/6;grid-row:2/5}#caja3{padding-right:1em;grid-column:6/8;grid-row:4/8;justify-content:center;align-items:center}#caja4{grid-column:1/5;grid-row:5/8}@keyframes introMove{0%,100%{-webkit-clip-path:polygon(3% 19%,92% 5%,96% 93%,8% 89%);clip-path:polygon(3% 19%,92% 5%,96% 93%,8% 89%)}25%{-webkit-clip-path:polygon(5% 8%,91% 15%,95% 89%,8% 89%);clip-path:polygon(5% 8%,91% 15%,95% 89%,8% 89%)}50%{-webkit-clip-path:polygon(16% 26%,91% 15%,95% 89%,6% 75%);clip-path:polygon(16% 26%,91% 15%,95% 89%,6% 75%)}75%{-webkit-clip-path:polygon(19% 7%,91% 15%,93% 72%,8% 93%);clip-path:polygon(19% 7%,91% 15%,93% 72%,8% 93%)}}@media only screen and (max-width:768px){[class*=col-]{width:100%}header{height:5em}header ul{overflow-x:scroll;justify-content:start;padding-left:2em;height:100%}ul{width:200%}ul li{text-align:center;margin:0 2em 0 0}.h-scroll{display:flex;justify-content:start;overflow-x:scroll;flex-wrap:nowrap;align-items:center}.intro{position:relative;-webkit-animation:none;animation:none;padding:2em;display:flex;justify-content:center}}@media only screen and (max-width:1200px){#caja1,#caja3,.intro{display:flex}#caja1,#caja3,#caja4{grid-column:1/8}.intro{position:relative;-webkit-animation:none;animation:none;padding:2em;justify-content:center;border:1em solid #fff;height:30em}#caja1{grid-row:1/2;text-align:center;background-color:#fff;color:#000;align-items:center;justify-content:center}#caja2{display:none;grid-column:1/1;grid-row:1/1;background-color:red}#caja3{padding-right:0;grid-row:2/6;justify-content:center;align-items:center}#caja4{grid-row:6/8}}.pcard .card-body p{white-space:nowrap;width:auto;overflow:hidden;text-overflow:ellipsis}.card-body label::before{content:'Leer Mas'}input[type=checkbox]{display:none}#climap_c:checked~p,#colores_c:checked~p,#escritos_c:checked~p,#horabondi_c:checked~p,#listacompras_c:checked~p,#notas_c:checked~p,#panerita_c:checked~p,#radio_c:checked~p,#roll_vet_c:checked~p,#romano_c:checked~p{white-space:initial;width:auto;overflow:hidden;text-overflow:ellipsis}#climap_c:checked~label::before,#colores_c:checked~label::before,#escritos_c:checked~label::before,#horabondi_c:checked~label::before,#listacompras_c:checked~label::before,#notas_c:checked~label::before,#panerita_c:checked~label::before,#radio_c:checked~label::before,#roll_vet_c:checked~label::before,#romano_c:checked~label::before{content:'Leer Menos'}.custom-grid{display:grid;display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;gap:1em;grid-template-areas:". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ."}</style>
 </head>
-
 <body style=margin:0;padding:0 class=v-scroll-style>
-    <header class="d-flex justify-content-end align-items-center">
-        <ul class=h-scroll-style>
-            <li><a href=#inicio>inicio</a></li>
-            <li><a href=#sobre-mi>sobre mi</a></li>
-            <li><a href=#conocimientos>conocimientos</a></li>
-            <li><a href=#extras>extras</a></li>
-            <li><a href=#certificaciones>certificaciones</a></li>
-            <li><a href=#proyectos>proyectos</a></li>
-            <li><a href=#contacto>contacto</a></li>
-        </ul>
-    </header>
-    <main class=p-1>
-        <div id=inicio class=mb-8></div>
-        <h1>Inicio</h1>
-        <section style=background-color:#272822 class="intro p-1 d-flex justify-content-center">
-            <div class="d-flex align-items-center">
-                <div>
-                    <code><span style=color:#6a993e>/* Recuerde que las cosas no son siempre como parecen ser. La curiosidad crea posibilidades y oportunidades - Roy T. Bennett */</span><br></code><code
-                        style=color:#f5f5f5><span style=color:#6cd5db>interface</span><span style=color:#4ebc7c> IPersona</span>{<br>&emsp;<span style=color:#6cd5db>nombre</span>:<span style=color:#4ebc7c>string</span>,<br>&emsp;<span style=color:#6cd5db>apellido</span>:<span style=color:#4ebc7c>string</span>,<br>&emsp;<span style=color:#6cd5db>profesion</span>:<span style=color:#4ebc7c>string</span><br>}<br><span style=color:#f7286f>const </span><span style=color:#6cd5db>cristian</span>:<span style=color:#4ebc7c>IPersona</span> = {<br>&emsp;<span style=color:#6cd5db>nombre</span>: <span style=color:#f5a44e>'Cristian Ismael'</span>,<br>&emsp;<span style=color:#6cd5db>apellido</span>: <span style=color:#f5a44e>'Gramajo'</span>,<br>&emsp;<span style=color:#6cd5db>profesion</span>:<span style=color:#f5a44e>&emsp;'Desarrollador Web'</span><br>}<br><span style=color:#f7286f>function </span><span style=color:#fcff24>mePresento</span><span style=color:#f5f5f5>(<span style=color:#6cd5db>persona</span>:<span style=color:#4ebc7c>IPersona</span>):<span style=color:#4ebc7c>string</span>&ensp;</span>{ <br>&emsp;<span style=color:#f7286f>return </span><span style=color:#f5a44e>`Hola, mi nombre es:<span style=color:#2566ca>${<span style=color:#6cd5db>persona.nombre</span>} ${<span style=color:#6cd5db>persona.apellido</span>}</span> y soy <span style=color:#2566ca>${<span style=color:#6cd5db>persona.profesion</span>}</span>`</span>;<br>}</code>
-                </div>
-            </div>
-        </section>
-        <div id=sobre-mi class=mb-8></div>
-        <h1>Sobre Mí</h1>
-        <section class="col-6 d-flex">
-            <div class="custom-grid col-12 p-3">
-                <div id=caja1 style=border-radius:.2em class=p-3>
-                    <h2>Hola, Soy Cristian</h2>
-                </div>
-                <div id=caja2
-                    style="background-image:url('./img/horizontal.webp');background-repeat:no-repeat;background-size:cover"
-                    class=p-3>
-                </div>
-                <div id=caja3>
-                    <img src=./img/vertical.webp alt="" width=100% height=100%
-                        style=border-radius:.2em;object-fit:contain>
-                </div>
-                <div id=caja4 class=p-3>
-                    <p>Tengo 27 años y el Desarrollo Web es mi pasión.</p><br>
-                    <p>Desarrollo aplicaciones fullstack modernas. Me gusta enfocarme mucho en el diseño responsive para
-                        la mejor experiencia de usuario en cualquier dispositivo.</p><br><a
-                        href="https://drive.google.com/file/d/1ElW3TABazc18igeontfsW73LTU9XFlXp/view?usp=drive_link"
-                        target=_blank rel=noopener class="btn btn-blue p-1">Curriculum Vitae</a>
-                    <a href="https://drive.google.com/file/d/1ElImnLYxSrVNA7E18X5yxSDYu9EaoxSP/view?usp=drive_link"
-                        target=_blank rel=noopener class="btn btn-blue p-1">Resume</a>
-                </div>
-            </div>
-        </section>
-        <div id=conocimientos class=mb-8></div>
-        <h1>Conocimientos</h1>
-        <section>
-            <div class="d-flex justify-content-center">
-                <article class="col-10 h-scroll d-flex flex-wrap justify-content-evenly">
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/HTML5.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>HTML 5</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/CSS3.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>CSS 3</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/javascript.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>JAVASCRIPT</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/bootstrap5.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>BOOTSTRAP</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/materialize.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>MATERIALIZE</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/jquery.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>JQUERY</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/react-black.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>REACT</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/php-1.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>PHP</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/nodejs.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>NODE JS</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/mysql-2.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>MYSQL</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/nextjs.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>NEXTJS</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class=circle-svg>
-                        <div class="card-header p-1"><img src=./img/svg/astro.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>ASTRO</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <div id=extras class=mb-8></div>
-        <h1>Extras</h1>
-        <section>
-            <div class="d-flex justify-content-center">
-                <article class="col-10 h-scroll d-flex flex-wrap justify-content-evenly">
-                    <div class=ecard>
-                        <div class="card-header p-1"><img src=./img/svg/postman.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>POSTMAN</h2>
-                            <p>Manejo de ambientes de desarrollo, perfiles.</p>
-                        </div>
-                    </div>
-                    <div class=ecard>
-                        <div class="card-header p-1"><img src=./img/svg/adobe-xd.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>ADOBE XD</h2>
-                            <p>Diseño de logos e interfaces</p>
-                        </div>
-                    </div>
-                    <div class=ecard>
-                        <div class="card-header p-1"><img src=./img/svg/figma.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>FIGMA</h2>
-                            <p>Diseño de logos e interfaces</p>
-                        </div>
-                    </div>
-                    <div class=ecard>
-                        <div class="card-header p-1"><img src=./img/svg/languaje.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>INGLES</h2>
-                            <p>Ingles intermedio para lectura y escritura</p>
-                        </div>
-                    </div>
-                    <div class=ecard>
-                        <div class="card-header p-1"><img src=./img/svg/office.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>PAQUETE OFFICE</h2>
-                            <p>Excel, Word, OneNote, Powerpoint</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <div id=certificaciones class=mb-8></div>
-        <h1>Certificaciones</h1>
-        <section>
-            <div class="d-flex justify-content-center">
-                <article class="col-8 h-scroll d-flex flex-wrap justify-content-evenly neurobox">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nombre del certificado</th>
-                                <th>Enlace</th>
-                                <th>Emisor / Tutor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>NextJS: De cero a experto</td>
-                                <td>
-                                    <a href=https://www.udemy.com/certificate/UC-9d96cb02-1aa8-4e61-a1a0-d69c28096c98/
-                                        target=_blank>
-                                        <img src=./img/logos/udemy.svg alt="udemy logo" title=udemy>
-                                    </a>
-                                </td>
-                                <td>Udemy, Fernando Herrera</td>
-                            </tr>
-                            <tr>
-                                <td>Node: De cero a experto</td>
-                                <td>
-                                    <a href=https://www.udemy.com/certificate/UC-b4886cf4-a2b3-4ec6-a9c5-e600b8382f1c/
-                                        target=_blank>
-                                        <img src=./img/logos/udemy.svg alt="udemy logo" title=udemy>
-                                    </a>
-                                </td>
-                                <td>Udemy, Fernando Herrera</td>
-                            </tr>
-                            <tr>
-                                <td>PWA - Aplicaciones Web Progresivas: De cero a experto</td>
-                                <td><a href=https://www.udemy.com/certificate/UC-29a305eb-93b2-4b2e-bad1-5e2f5a981f5c/
-                                        target=_blank><img src=./img/logos/udemy.svg alt="udemy logo" title=udemy></a>
-                                </td>
-                                <td>Udemy, Fernando Herrera</td>
-                            </tr>
-                            <tr>
-                                <td>React: De cero a experto ( Hooks y MERN )</td>
-                                <td><a href=https://www.udemy.com/certificate/UC-d5d36187-76e9-4d13-b4a2-8e0e71330e5a/
-                                        target=_blank><img src=./img/logos/udemy.svg alt="udemy logo" title=udemy></a>
-                                </td>
-                                <td>Udemy, Fernando Herrera</td>
-                            </tr>
-                            <tr>
-                                <td>Diseño de Apps Moviles</td>
-                                <td><a href="https://drive.google.com/file/d/1i8uRuuGTiglJ3hNsv_9UsudZvqJFiC6-/view?usp=drive_link"
-                                        target=_blank><img src=./img/logos/google.svg alt="udemy logo"
-                                            title=Certificado></a></td>
-                                <td>Google Activate</td>
-                            </tr>
-                            <tr>
-                                <td>Introducción al Desarrollo Web 1 y 2</td>
-                                <td>
-                                    <a href="https://drive.google.com/file/d/13rowDe4hcQ-yHd1IRd-lRnlc-6rpXvnD/view?usp=drive_link"
-                                        target=_blank><img src=./img/logos/google.svg alt="google logo"
-                                            title="Certificado 1"></a>
-                                    <a href="https://drive.google.com/file/d/1-0PsQU7aaZgiZ3JTA5WqJSTipMKz4GMD/view?usp=drive_link"
-                                        target=_blank><img src=./img/logos/google.svg alt="google logo"
-                                            title="Certificado 2"></a>
-                                </td>
-                                <td>Google Activate</td>
-                            </tr>
-                            <tr>
-                                <td>Java Inicial: primeros pasos en la programación</td>
-                                <td>
-                                    <a href="https://drive.google.com/file/d/1WBJZ8-qBMfoy--WZp7Y0Lwf7aC-4VEW9/view?usp=drive_link"
-                                        target=_blank><img src=./img/logos/medal.svg alt="certificado logo"
-                                            title="Certificado 1"></a>
-                                </td>
-                                <td>Fundacion Proydesa</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-            </div>
-        </section>
-        <div id=proyectos class=mb-8></div>
-        <h1>Proyectos</h1>
-        <section>
-            <div class="d-flex justify-content-center">
-                <article class="col-10 h-scroll d-flex flex-wrap justify-content-evenly">
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/horabondi.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>HoraBondi</h2>
-                            <input type=checkbox id=horabondi_c>
-                            <p>Esta es una SPA y PWA, en la cual podemos consultar los horarios, precios y publicaciones
-                                de los colectivos urbanos de la provincia de Tucumán. Hecho con NextJS + MySQL,
-                                desplegado en vercel y Railway.</p>
-                            <label for=horabondi_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://horabondi.vercel.app/ target=_blank class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/Cristian021195/horabondi target=_blank
-                                class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/panerita.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Panerita</h2>
-                            <input type=checkbox id=panerita_c>
-                            <p>Sistema WEB para distribuidora de productos alimenticios. Trabaja con roles y diferentes
-                                permisos, genera, edita e imprime comprobantes, maneja stock, y hace analisis de ventas
-                                por fechas. Hecho en HTML, CSS, JS, Bootstrap 5, PHP y MySQL. <br>
-                                <b>Usuario: </b>&nbsp; admin@admin
-                                <b>Contraseña: </b>&nbsp; adminadmin
-                            </p>
-                            <label for=panerita_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://lapanerita.000webhostapp.com/panerita/ target=_blank rel=""
-                                class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/panerita
-                                target=_blank rel="" class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/notas.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Notas</h2>
-                            <input type=checkbox id=notas_c>
-                            <p>Es una PWA para uso offline, con la librería PouchDB y uso de una tabla dinámica que yo
-                                diseñé. Hecho con Bootstrap, HTML y JS.</p>
-                            <label for=notas_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://cristian021195.github.io/notas/ target=_blank
-                                class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/notas
-                                target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/climap.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Climap</h2>
-                            <input type=checkbox id=climap_c>
-                            <p>Es una PWA de muy simple diseño, con uso de React Router y alojada en Firebase, hace uso
-                                de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.</p>
-                            <label for=climap_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://climap-6e45e.web.app/ target=_blank class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/Cristian021195/climap target=_blank class="btn btn-grey p-1">Ver
-                                Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/romano.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Romano</h2>
-                            <input type=checkbox id=romano_c>
-                            <p>Landing Page generada con Astro + Astro Image. Proyecto para bar local, reservas, menú
-                                carta e información del mismo,</p>
-                            <label for=romano_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://romano-bar.netlify.app/ target=_blank class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/Cristian021195/landing-cute target=_blank
-                                class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/escritos.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Escritos</h2>
-                            <input type=checkbox id=escritos_c>
-                            <p>Es una PWA, alojada en Firebase. Consume datos (poemas) de una api pública, usa React
-                                Router, HTML + CSS + React JS.</p>
-                            <label for=escritos_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://escritos-f9d8d.web.app/ target=_blank class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/Cristian021195/escritos-fontend target=_blank
-                                class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img
-                                src=https://upload.wikimedia.org/wikipedia/commons/c/c5/Colorwheel.svg alt=images
-                                loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Colores</h2>
-                            <input type=checkbox id=colores_c>
-                            <p>Es una PWA, simple para hacer uso de una gama de colores de manera rapida.</p>
-                            <label for=colores_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://cristian021195.github.io/color-palette/ target=_blank
-                                class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/Cristian021195/color-palette target=_blank
-                                class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/lista-compras.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>ListaCompras</h2>
-                            <input type=checkbox id=listacompras_c>
-                            <p>Es una PWA, desplegada en Vercel, hecho con React JS + TypeScript, y CSS + DexieJS. Sirve
-                                para llevar control en un dia de compras en el supermercado</p>
-                            <label for=listacompras_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://listacompras-omega.vercel.app/ target=_blank
-                                class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/compras
-                                target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/radio-app.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Radio App</h2>
-                            <input type=checkbox id=radio_c>
-                            <p>Es una PWA, desplegada en Vercel, hecho con React JS + TypeScript + Redux. Tiene presets
-                                cargados para escuchar, sino se pueden agregar radios nuevas por URL</p>
-                            <label for=radio_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://radio-taupe.vercel.app/ target=_blank class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/Cristian021195/radio target=_blank class="btn btn-grey p-1">Ver
-                                Repositorio</a></div>
-                    </div>
-                    <div class=pcard>
-                        <div class="card-header p-1"><img src=./img/svg/rolling-vet.svg alt=images loading=lazy></div>
-                        <div class="card-body p-1">
-                            <h2>Rolling Vet</h2>
-                            <input type=checkbox id=roll_vet_c>
-                            <p>Proyecto final de bootcamp en Rolling Code, fue un proyecto colaborativo, usamos Trello,
-                                Github, Slack, React JS, NodeJS, y Mongo DB. Desplegado en vercel tanto frontend como
-                                backend.</p>
-                            <label for=roll_vet_c></label>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between p-1"><a
-                                href=https://rolling-veterinaria-frontend.vercel.app target=_blank
-                                class="btn btn-dark p-1">Probar</a><a
-                                href=https://github.com/orgs/ProyectoFinal-Rc/repositories target=_blank
-                                class="btn btn-grey p-1">Ver Repositorios</a></div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer id=contacto class=p-3>
-        <h1>Contacto</h1>
-        <p>Hablame por alguna de estas redes sociales, o &nbsp;<button style=background-color:#e57373;color:#f5f5f5
-                class="btn p-1" onclick=compartir()>Comparte</button>&nbsp;este portfolio a quien necesite.</p>
-        <div><a href=mailto:cristiangramajo015@gmail.com style=background-color:#e57373;color:#f5f5f5
-                class="btn p-1">GMail</a>&nbsp;&nbsp;<a href=https://github.com/Cristian021195 target=_blank
-                style=background-color:#546e7a;color:#f5f5f5 class="btn p-1">GitHub</a>&nbsp;&nbsp;<a
-                href=https://www.linkedin.com/in/cristian021195 target=_blank
-                style=background-color:#0a66c2;color:#f5f5f5 class="btn p-1">LinkedIn</a>&nbsp;&nbsp;</div>
-    </footer>
-    <script>function compartir() { navigator && navigator.share ? navigator.share({ title: "Portfolio", text: "Portfolio Cristian Gramajo", url: "https://cristian021195.github.io/portfolio" }).then((() => !0)).catch((() => !1)) : alert("¡no soporta compartir!") } "serviceWorker" in navigator && navigator.serviceWorker.register("./serviceworker.js")</script>
+<header class="d-flex justify-content-end align-items-center">
+<ul class=h-scroll-style>
+<li><a href=#inicio>inicio</a></li>
+<li><a href=#sobre-mi>sobre mi</a></li>
+<li><a href=#conocimientos>conocimientos</a></li>
+<li><a href=#extras>extras</a></li>
+<li><a href=#certificaciones>certificaciones</a></li>
+<li><a href=#proyectos>proyectos</a></li>
+<li><a href=#contacto>contacto</a></li>
+</ul>
+</header>
+<main class=p-1>
+<div id=inicio class=mb-8></div>
+<h1>Inicio</h1>
+<section style=background-color:#272822 class="intro p-1 d-flex justify-content-center">
+<div class="d-flex align-items-center">
+<div>
+<code><span style=color:#6a993e>/* Recuerde que las cosas no son siempre como parecen ser. La curiosidad crea posibilidades y oportunidades - Roy T. Bennett */</span><br></code><code style=color:#f5f5f5><span style=color:#6cd5db>interface</span><span style=color:#4ebc7c> IPersona</span>{<br>&emsp;<span style=color:#6cd5db>nombre</span>:<span style=color:#4ebc7c>string</span>,<br>&emsp;<span style=color:#6cd5db>apellido</span>:<span style=color:#4ebc7c>string</span>,<br>&emsp;<span style=color:#6cd5db>profesion</span>:<span style=color:#4ebc7c>string</span><br>}<br><span style=color:#f7286f>const </span><span style=color:#6cd5db>cristian</span>:<span style=color:#4ebc7c>IPersona</span> = {<br>&emsp;<span style=color:#6cd5db>nombre</span>: <span style=color:#f5a44e>'Cristian Ismael'</span>,<br>&emsp;<span style=color:#6cd5db>apellido</span>: <span style=color:#f5a44e>'Gramajo'</span>,<br>&emsp;<span style=color:#6cd5db>profesion</span>:<span style=color:#f5a44e>&emsp;'Desarrollador Web'</span><br>}<br><span style=color:#f7286f>function </span><span style=color:#fcff24>mePresento</span><span style=color:#f5f5f5>(<span style=color:#6cd5db>persona</span>:<span style=color:#4ebc7c>IPersona</span>):<span style=color:#4ebc7c>string</span>&ensp;</span>{ <br>&emsp;<span style=color:#f7286f>return </span><span style=color:#f5a44e>`Hola, mi nombre es:<span style=color:#2566ca>${<span style=color:#6cd5db>persona.nombre</span>} ${<span style=color:#6cd5db>persona.apellido</span>}</span> y soy <span style=color:#2566ca>${<span style=color:#6cd5db>persona.profesion</span>}</span>`</span>;<br>}</code>
+</div>
+</div>
+</section>
+<div id=sobre-mi class=mb-8></div>
+<h1>Sobre Mí</h1>
+<section class="col-6 d-flex">
+<div class="custom-grid col-12 p-3">
+<div id=caja1 style=border-radius:.2em class=p-3>
+<h2>Hola, Soy Cristian</h2>
+</div>
+<div id=caja2 style="background-image:url('./img/horizontal.webp');background-repeat:no-repeat;background-size:cover" class=p-3>
+</div>
+<div id=caja3>
+<img src=./img/vertical.webp alt="" width=100% height=100% style=border-radius:.2em;object-fit:contain>
+</div>
+<div id=caja4 class=p-3>
+<p>Tengo 27 años y el Desarrollo Web es mi pasión.</p><br>
+<p>Desarrollo aplicaciones fullstack modernas. Me gusta enfocarme mucho en el diseño responsive para la mejor experiencia de usuario en cualquier dispositivo.</p><br><a href="https://drive.google.com/file/d/1ElW3TABazc18igeontfsW73LTU9XFlXp/view?usp=drive_link" target=_blank rel=noopener class="btn btn-blue p-1">Curriculum Vitae</a>
+<a href="https://drive.google.com/file/d/1ElImnLYxSrVNA7E18X5yxSDYu9EaoxSP/view?usp=drive_link" target=_blank rel=noopener class="btn btn-blue p-1">Resume</a>
+</div>
+</div>
+</section>
+<div id=conocimientos class=mb-8></div>
+<h1>Conocimientos</h1>
+<section>
+<div class="d-flex justify-content-center">
+<article class="col-10 h-scroll d-flex flex-wrap justify-content-evenly">
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/HTML5.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>HTML 5</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/CSS3.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>CSS 3</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/javascript.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>JAVASCRIPT</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/bootstrap5.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>BOOTSTRAP</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/materialize.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>MATERIALIZE</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/jquery.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>JQUERY</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/react-black.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>REACT</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/php-1.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>PHP</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/nodejs.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>NODE JS</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/mysql-2.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>MYSQL</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/nextjs.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>NEXTJS</h2>
+<p></p>
+</div>
+</div>
+<div class=circle-svg>
+<div class="card-header p-1"><img src=./img/svg/astro.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>ASTRO</h2>
+<p></p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<div id=extras class=mb-8></div>
+<h1>Extras</h1>
+<section>
+<div class="d-flex justify-content-center">
+<article class="col-10 h-scroll d-flex flex-wrap justify-content-evenly">
+<div class=ecard>
+<div class="card-header p-1"><img src=./img/svg/postman.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>POSTMAN</h2>
+<p>Manejo de ambientes de desarrollo, perfiles.</p>
+</div>
+</div>
+<div class=ecard>
+<div class="card-header p-1"><img src=./img/svg/adobe-xd.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>ADOBE XD</h2>
+<p>Diseño de logos e interfaces</p>
+</div>
+</div>
+<div class=ecard>
+<div class="card-header p-1"><img src=./img/svg/figma.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>FIGMA</h2>
+<p>Diseño de logos e interfaces</p>
+</div>
+</div>
+<div class=ecard>
+<div class="card-header p-1"><img src=./img/svg/languaje.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>INGLES</h2>
+<p>Ingles intermedio para lectura y escritura</p>
+</div>
+</div>
+<div class=ecard>
+<div class="card-header p-1"><img src=./img/svg/office.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>PAQUETE OFFICE</h2>
+<p>Excel, Word, OneNote, Powerpoint</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<div id=certificaciones class=mb-8></div>
+<h1>Certificaciones</h1>
+<section>
+<div class="d-flex justify-content-center">
+<article class="col-8 h-scroll d-flex flex-wrap justify-content-evenly neurobox">
+<table>
+<thead>
+<tr>
+<th>Nombre del certificado</th>
+<th>Enlace</th>
+<th>Emisor / Tutor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NextJS: De cero a experto</td>
+<td>
+<a href=https://www.udemy.com/certificate/UC-9d96cb02-1aa8-4e61-a1a0-d69c28096c98/ target=_blank>
+<img src=./img/logos/udemy.svg alt="udemy logo" title=udemy>
+</a>
+</td>
+<td>Udemy, Fernando Herrera</td>
+</tr>
+<tr>
+<td>Node: De cero a experto</td>
+<td>
+<a href=https://www.udemy.com/certificate/UC-b4886cf4-a2b3-4ec6-a9c5-e600b8382f1c/ target=_blank>
+<img src=./img/logos/udemy.svg alt="udemy logo" title=udemy>
+</a>
+</td>
+<td>Udemy, Fernando Herrera</td>
+</tr>
+<tr>
+<td>PWA - Aplicaciones Web Progresivas: De cero a experto</td>
+<td><a href=https://www.udemy.com/certificate/UC-29a305eb-93b2-4b2e-bad1-5e2f5a981f5c/ target=_blank><img src=./img/logos/udemy.svg alt="udemy logo" title=udemy></a>
+</td>
+<td>Udemy, Fernando Herrera</td>
+</tr>
+<tr>
+<td>React: De cero a experto ( Hooks y MERN )</td>
+<td><a href=https://www.udemy.com/certificate/UC-d5d36187-76e9-4d13-b4a2-8e0e71330e5a/ target=_blank><img src=./img/logos/udemy.svg alt="udemy logo" title=udemy></a>
+</td>
+<td>Udemy, Fernando Herrera</td>
+</tr>
+<tr>
+<td>Diseño de Apps Moviles</td>
+<td><a href="https://drive.google.com/file/d/1i8uRuuGTiglJ3hNsv_9UsudZvqJFiC6-/view?usp=drive_link" target=_blank><img src=./img/logos/google.svg alt="udemy logo" title=Certificado></a></td>
+<td>Google Activate</td>
+</tr>
+<tr>
+<td>Introducción al Desarrollo Web 1 y 2</td>
+<td>
+<a href="https://drive.google.com/file/d/13rowDe4hcQ-yHd1IRd-lRnlc-6rpXvnD/view?usp=drive_link" target=_blank><img src=./img/logos/google.svg alt="google logo" title="Certificado 1"></a>
+<a href="https://drive.google.com/file/d/1-0PsQU7aaZgiZ3JTA5WqJSTipMKz4GMD/view?usp=drive_link" target=_blank><img src=./img/logos/google.svg alt="google logo" title="Certificado 2"></a>
+</td>
+<td>Google Activate</td>
+</tr>
+<tr>
+<td>Java Inicial: primeros pasos en la programación</td>
+<td>
+<a href="https://drive.google.com/file/d/1WBJZ8-qBMfoy--WZp7Y0Lwf7aC-4VEW9/view?usp=drive_link" target=_blank><img src=./img/logos/medal.svg alt="certificado logo" title="Certificado 1"></a>
+</td>
+<td>Fundacion Proydesa</td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+</section>
+<div id=proyectos class=mb-8></div>
+<h1>Proyectos</h1>
+<section>
+<div class="d-flex justify-content-center">
+<article class="col-10 h-scroll d-flex flex-wrap justify-content-evenly">
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/horabondi.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>HoraBondi</h2>
+<input type=checkbox id=horabondi_c>
+<p>Esta es una SPA y PWA, en la cual podemos consultar los horarios, precios y publicaciones de los colectivos urbanos de la provincia de Tucumán. Hecho con NextJS + MySQL, desplegado en vercel y Railway.</p>
+<label for=horabondi_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://horabondi.vercel.app/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/horabondi target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/panerita.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Panerita</h2>
+<input type=checkbox id=panerita_c>
+<p>Sistema WEB para distribuidora de productos alimenticios. Trabaja con roles y diferentes permisos, genera, edita e imprime comprobantes, maneja stock, y hace analisis de ventas por fechas. Hecho en HTML, CSS, JS, Bootstrap 5, PHP y MySQL. <br>
+<b>Usuario: </b>&nbsp; admin@admin.com
+<b>Contraseña: </b>&nbsp; adminadmin
+</p>
+<label for=panerita_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://lapanerita.000webhostapp.com/panerita/ target=_blank rel="" class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/panerita target=_blank rel="" class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/notas.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Notas</h2>
+<input type=checkbox id=notas_c>
+<p>Es una PWA para uso offline, con la librería PouchDB y uso de una tabla dinámica que yo diseñé. Hecho con Bootstrap, HTML y JS.</p>
+<label for=notas_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://cristian021195.github.io/notas/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/notas target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/climap.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Climap</h2>
+<input type=checkbox id=climap_c>
+<p>Es una PWA de muy simple diseño, con uso de React Router y alojada en Firebase, hace uso de las API’S de Openweathermap y Mapbox. Hecho con React JS, y CSS.</p>
+<label for=climap_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://climap-6e45e.web.app/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/climap target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/romano.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Romano</h2>
+<input type=checkbox id=romano_c>
+<p>Landing Page generada con Astro + Astro Image. Proyecto para bar local, reservas, menú carta e información del mismo,</p>
+<label for=romano_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://romano-bar.netlify.app/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/landing-cute target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/escritos.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Escritos</h2>
+<input type=checkbox id=escritos_c>
+<p>Es una PWA, alojada en Firebase. Consume datos (poemas) de una api pública, usa React Router, HTML + CSS + React JS.</p>
+<label for=escritos_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://escritos-f9d8d.web.app/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/escritos-fontend target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=https://upload.wikimedia.org/wikipedia/commons/c/c5/Colorwheel.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Colores</h2>
+<input type=checkbox id=colores_c>
+<p>Es una PWA, simple para hacer uso de una gama de colores de manera rapida.</p>
+<label for=colores_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://cristian021195.github.io/color-palette/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/color-palette target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/lista-compras.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>ListaCompras</h2>
+<input type=checkbox id=listacompras_c>
+<p>Es una PWA, desplegada en Vercel, hecho con React JS + TypeScript, y CSS + DexieJS. Sirve para llevar control en un dia de compras en el supermercado</p>
+<label for=listacompras_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://listacompras-omega.vercel.app/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/compras target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/radio-app.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Radio App</h2>
+<input type=checkbox id=radio_c>
+<p>Es una PWA, desplegada en Vercel, hecho con React JS + TypeScript + Redux. Tiene presets cargados para escuchar, sino se pueden agregar radios nuevas por URL</p>
+<label for=radio_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://radio-taupe.vercel.app/ target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/Cristian021195/radio target=_blank class="btn btn-grey p-1">Ver Repositorio</a></div>
+</div>
+<div class=pcard>
+<div class="card-header p-1"><img src=./img/svg/rolling-vet.svg alt=images loading=lazy></div>
+<div class="card-body p-1">
+<h2>Rolling Vet</h2>
+<input type=checkbox id=roll_vet_c>
+<p>Proyecto final de bootcamp en Rolling Code, fue un proyecto colaborativo, usamos Trello, Github, Slack, React JS, NodeJS, y Mongo DB. Desplegado en vercel tanto frontend como backend.</p>
+<label for=roll_vet_c></label>
+</div>
+<div class="card-footer d-flex justify-content-between p-1"><a href=https://rolling-veterinaria-frontend.vercel.app target=_blank class="btn btn-dark p-1">Probar</a><a href=https://github.com/orgs/ProyectoFinal-Rc/repositories target=_blank class="btn btn-grey p-1">Ver Repositorios</a></div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer id=contacto class=p-3>
+<h1>Contacto</h1>
+<p>Hablame por alguna de estas redes sociales, o &nbsp;<button style=background-color:#e57373;color:#f5f5f5 class="btn p-1" onclick=compartir()>Comparte</button>&nbsp;este portfolio a quien necesite.</p>
+<div><a href=mailto:cristiangramajo015@gmail.com style=background-color:#e57373;color:#f5f5f5 class="btn p-1">GMail</a>&nbsp;&nbsp;<a href=https://github.com/Cristian021195 target=_blank style=background-color:#546e7a;color:#f5f5f5 class="btn p-1">GitHub</a>&nbsp;&nbsp;<a href=https://www.linkedin.com/in/cristian021195 target=_blank style=background-color:#0a66c2;color:#f5f5f5 class="btn p-1">LinkedIn</a>&nbsp;&nbsp;</div>
+</footer>
+<script>function compartir(){navigator&&navigator.share?navigator.share({title:"Portfolio",text:"Portfolio Cristian Gramajo",url:"https://cristian021195.github.io/portfolio"}).then((()=>!0)).catch((()=>!1)):alert("¡no soporta compartir!")}"serviceWorker"in navigator&&navigator.serviceWorker.register("./serviceworker.js")</script>
 </body>
-
 </html>
