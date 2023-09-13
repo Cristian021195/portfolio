@@ -5,7 +5,7 @@
     "display": "standalone",
     "theme_color": "#1E90FF",
     "background_color": "#61b1ff",
-    "description": "Portfolio, Cristian Ismael Gramajo.",
+    "description": "Portfolio, Cristian Gramajo.",
     "icons": [
         {
             "src":"./img/favicon.svg",
